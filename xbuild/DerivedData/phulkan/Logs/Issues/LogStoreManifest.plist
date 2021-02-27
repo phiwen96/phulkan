@@ -6,34 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>10D87C08-867D-4280-B9EC-C3E7F3837605</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
-			<key>fileName</key>
-			<string>10D87C08-867D-4280-B9EC-C3E7F3837605.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>graphics_generator-blkuyvqfvkpljucacstvhuwlrxfo</string>
-			<key>timeStartedRecording</key>
-			<real>636135827.28710699</real>
-			<key>timeStoppedRecording</key>
-			<real>636135828.69175696</real>
-			<key>title</key>
-			<string>Build target graphics_generator</string>
-			<key>uniqueIdentifier</key>
-			<string>10D87C08-867D-4280-B9EC-C3E7F3837605</string>
-		</dict>
 		<key>255998E7-AFE7-46F1-866A-4B0D5816D539</key>
 		<dict>
 			<key>className</key>
@@ -62,6 +34,62 @@
 			<key>uniqueIdentifier</key>
 			<string>255998E7-AFE7-46F1-866A-4B0D5816D539</string>
 		</dict>
+		<key>47311ADB-769D-434B-8F95-66AD80B3FD82</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>47311ADB-769D-434B-8F95-66AD80B3FD82.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>ZERO_CHECK-blkuyvqfvkpljucacstvhuwlrxfo</string>
+			<key>timeStartedRecording</key>
+			<real>636137775.68585205</real>
+			<key>timeStoppedRecording</key>
+			<real>636137775.74677002</real>
+			<key>title</key>
+			<string>Build target ZERO_CHECK</string>
+			<key>uniqueIdentifier</key>
+			<string>47311ADB-769D-434B-8F95-66AD80B3FD82</string>
+		</dict>
+		<key>B8F76DF2-FE7E-4CA9-BDEB-0C37B71403E7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>B8F76DF2-FE7E-4CA9-BDEB-0C37B71403E7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>signature</key>
+			<string>graphics_generator-blkuyvqfvkpljucacstvhuwlrxfo</string>
+			<key>timeStartedRecording</key>
+			<real>636137775.74782503</real>
+			<key>timeStoppedRecording</key>
+			<real>636137776.77499998</real>
+			<key>title</key>
+			<string>Build target graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>B8F76DF2-FE7E-4CA9-BDEB-0C37B71403E7</string>
+		</dict>
 		<key>BF6F6F61-FFA7-48C2-9826-CCB4AAFD2E98</key>
 		<dict>
 			<key>className</key>
@@ -89,34 +117,6 @@
 			<string>Build target testlib</string>
 			<key>uniqueIdentifier</key>
 			<string>BF6F6F61-FFA7-48C2-9826-CCB4AAFD2E98</string>
-		</dict>
-		<key>F22319AD-B48B-4748-A1B6-1D492AF19301</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
-			<key>fileName</key>
-			<string>F22319AD-B48B-4748-A1B6-1D492AF19301.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>ZERO_CHECK-blkuyvqfvkpljucacstvhuwlrxfo</string>
-			<key>timeStartedRecording</key>
-			<real>636135827.23834097</real>
-			<key>timeStoppedRecording</key>
-			<real>636135827.28651702</real>
-			<key>title</key>
-			<string>Build target ZERO_CHECK</string>
-			<key>uniqueIdentifier</key>
-			<string>F22319AD-B48B-4748-A1B6-1D492AF19301</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
