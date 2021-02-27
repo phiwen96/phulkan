@@ -7,11 +7,11 @@
 /Users/pw/GitHub/phulkan/xbuild/CMakeFiles/ZERO_CHECK.dir
 /Users/pw/GitHub/phulkan/xbuild/docs/CMakeFiles/RUN_TESTS.dir
 /Users/pw/GitHub/phulkan/xbuild/docs/CMakeFiles/docs.dir
-/Users/pw/GitHub/phulkan/xbuild/generators/CMakeFiles/RUN_TESTS.dir
 /Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/RUN_TESTS.dir
 /Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/phulkan_library.dir
 /Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/graphics_generator.dir
 /Users/pw/GitHub/phulkan/xbuild/apps/CMakeFiles/RUN_TESTS.dir
+/Users/pw/GitHub/phulkan/xbuild/apps/CMakeFiles/app.dir
 /Users/pw/GitHub/phulkan/xbuild/tests/CMakeFiles/RUN_TESTS.dir
 /Users/pw/GitHub/phulkan/xbuild/tests/CMakeFiles/testlib.dir
 /Users/pw/GitHub/phulkan/xbuild/_deps/catch-build/CMakeFiles/RUN_TESTS.dir

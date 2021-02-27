@@ -46,11 +46,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/pw/GitHub/phulkan/xbuild/generators/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/Users/pw/GitHub/phulkan/xbuild/src/cmake_install.cmake")
 endif()
 

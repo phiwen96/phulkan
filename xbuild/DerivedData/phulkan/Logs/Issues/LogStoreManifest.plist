@@ -6,16 +6,16 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2B137558-8BB2-4328-A0BA-067BB4E09EA1</key>
+		<key>0C9AF1D8-2DE8-4954-8C5A-BF0111BABA4F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
 			<key>documentTypeString</key>
 			<string>&lt;nil&gt;</string>
 			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
 			<key>fileName</key>
-			<string>2B137558-8BB2-4328-A0BA-067BB4E09EA1.xcactivitylog</string>
+			<string>0C9AF1D8-2DE8-4954-8C5A-BF0111BABA4F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -24,17 +24,17 @@
 				<string>S</string>
 			</dict>
 			<key>signature</key>
-			<string>graphics_generator-blkuyvqfvkpljucacstvhuwlrxfo</string>
+			<string>phulkan_library-blkuyvqfvkpljucacstvhuwlrxfo</string>
 			<key>timeStartedRecording</key>
-			<real>636125493.91668701</real>
+			<real>636125717.71812606</real>
 			<key>timeStoppedRecording</key>
-			<real>636125495.14341605</real>
+			<real>636125717.85893905</real>
 			<key>title</key>
-			<string>Build target graphics_generator</string>
+			<string>Build target phulkan_library</string>
 			<key>uniqueIdentifier</key>
-			<string>2B137558-8BB2-4328-A0BA-067BB4E09EA1</string>
+			<string>0C9AF1D8-2DE8-4954-8C5A-BF0111BABA4F</string>
 		</dict>
-		<key>7BE917B0-10DF-4B9F-927C-6EF28EDB4249</key>
+		<key>3BE9DDFF-88B6-4223-964A-04F2280CE950</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
 			<key>fileName</key>
-			<string>7BE917B0-10DF-4B9F-927C-6EF28EDB4249.xcactivitylog</string>
+			<string>3BE9DDFF-88B6-4223-964A-04F2280CE950.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +54,69 @@
 			<key>signature</key>
 			<string>ZERO_CHECK-blkuyvqfvkpljucacstvhuwlrxfo</string>
 			<key>timeStartedRecording</key>
-			<real>636125493.84490705</real>
+			<real>636125716.24633706</real>
 			<key>timeStoppedRecording</key>
-			<real>636125493.91538703</real>
+			<real>636125716.33218896</real>
 			<key>title</key>
 			<string>Build target ZERO_CHECK</string>
 			<key>uniqueIdentifier</key>
-			<string>7BE917B0-10DF-4B9F-927C-6EF28EDB4249</string>
+			<string>3BE9DDFF-88B6-4223-964A-04F2280CE950</string>
+		</dict>
+		<key>789D4C8B-1C29-436E-AD50-DDACCD73E26E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>789D4C8B-1C29-436E-AD50-DDACCD73E26E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>testlib-blkuyvqfvkpljucacstvhuwlrxfo</string>
+			<key>timeStartedRecording</key>
+			<real>636125717.81753397</real>
+			<key>timeStoppedRecording</key>
+			<real>636125727.70878696</real>
+			<key>title</key>
+			<string>Build target testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>789D4C8B-1C29-436E-AD50-DDACCD73E26E</string>
+		</dict>
+		<key>8AE8E4AC-877D-4859-965B-43A1FE8E0B1F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>8AE8E4AC-877D-4859-965B-43A1FE8E0B1F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>graphics_generator-blkuyvqfvkpljucacstvhuwlrxfo</string>
+			<key>timeStartedRecording</key>
+			<real>636125716.33339596</real>
+			<key>timeStoppedRecording</key>
+			<real>636125717.71746898</real>
+			<key>title</key>
+			<string>Build target graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>8AE8E4AC-877D-4859-965B-43A1FE8E0B1F</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

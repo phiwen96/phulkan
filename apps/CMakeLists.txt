@@ -1,6 +1,6 @@
-# add_executable(app app.cpp)
-# target_compile_features(app PRIVATE cxx_std_20)
-# target_link_libraries(app PRIVATE phulkan_library)
+add_executable(app app.cpp)
+target_compile_features(app PRIVATE cxx_std_20)
+target_link_libraries(app PRIVATE phulkan_library)
 
 # add_executable(app2 app2.cpp)
 # target_compile_features(app2 PRIVATE cxx_std_20)
