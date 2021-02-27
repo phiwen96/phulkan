@@ -40,13 +40,18 @@ if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
 endif()
  
-include(FetchContent)
+include (FetchContent)
+include (WriteCompilerDetectionHeader)
+
+add_subdirectory (generators)
 
 # The compiled library code is here
 add_subdirectory (src)
 
 # The executable code is here
 add_subdirectory (apps)
+
+
 
 # Testing only available if this is the main app
 # Emergency override MODERN_CMAKE_BUILD_TESTING provided as well

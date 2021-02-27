@@ -27,7 +27,7 @@ NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
 ConfigureCommand: "/usr/local/Cellar/cmake/3.19.6/bin/cmake" "/Users/pw/GitHub/phulkan"
-MakeCommand: /usr/local/Cellar/cmake/3.19.4/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+MakeCommand: /usr/local/Cellar/cmake/3.19.6/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
