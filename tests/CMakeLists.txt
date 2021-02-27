@@ -8,12 +8,11 @@ FetchContent_MakeAvailable(catch)
 # Adds Catch2::Catch2
 
 
-
 # Tests need to be added as executables first
 add_executable (testlib testlib.cpp)
 
 # I'm using C++20 in the test
-target_compile_features (testlib PRIVATE cxx_std_17)
+# target_compile_features (testlib PRIVATE cxx_std_17)
 
 # Should be linked to the main library, as well as the Catch2 testing library
 target_link_libraries (testlib PRIVATE phulkan_library Catch2::Catch2)

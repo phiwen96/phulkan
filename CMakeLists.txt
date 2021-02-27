@@ -12,8 +12,10 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-
+	
 	# Let's ensure -std=g++xx instead of -std=c++xx
+	set (CMAKE_CXX_STANDARD 20)
+	set (CMAKE_CXX_STANDARD_REQUIRED ON)
 	set (CMAKE_CXX_EXTENSIONS ON)
 
 	# Let's nicely support folders in IDEs
