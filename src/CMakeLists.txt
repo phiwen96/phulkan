@@ -22,6 +22,17 @@ target_compile_definitions (phulkan_library PUBLIC kuk=3)
 # We need this directory, and users of our library will need it too
 target_include_directories (phulkan_library PUBLIC ../include ${CMAKE_CURRENT_BINARY_DIR})
 
+target_link_libraries (phulkan_library
+	PUBLIC 
+	${Vulkan_LIBRARIES}
+ 	 glfw)
+
+target_include_directories (phulkan_library
+	PUBLIC
+	${Vulkan_INCLUDE_DIR}
+	glfw
+  	glm)
+
 # This depends on (header only) boost
 # target_link_libraries (modern_library PRIVATE Boost::boost)
 
