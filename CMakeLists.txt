@@ -38,6 +38,11 @@ if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
      		message(STATUS "Doxygen not found, not building docs")
    	endif()
 
+
+	find_package(Vulkan REQUIRED)
+	find_package(glfw3 REQUIRED)
+	find_package(glm REQUIRED)
+
 endif()
  
 include (FetchContent)

@@ -7,20 +7,60 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		1654EBB0838444668C3DCAFD /* ZERO_CHECK */ = {
+		0591A8143D444244BDF2525D /* NightlyMemoryCheck */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DEA1E64A045D4C49AE0AB438 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = E43873B8E15F428BAB21FFE5 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
 			buildPhases = (
-				E594FF7834D0B496D8A981C0 /* Generate CMakeFiles/ZERO_CHECK */,
+				2F7B89DD4E82073DE5D8D8DE /* Generate CMakeFiles/NightlyMemoryCheck */,
 			);
 			dependencies = (
+				A2E5B882771140EFB93BA689 /* PBXTargetDependency */,
 			);
-			name = ZERO_CHECK;
-			productName = ZERO_CHECK;
+			name = NightlyMemoryCheck;
+			productName = NightlyMemoryCheck;
 		};
-		186F9BDA70E5473AAB3F2450 /* RUN_TESTS */ = {
+		2D60A5802EC243508B04BF76 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 7B2F5A334213414D9DCCB615 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildConfigurationList = 7434B4C128544566BD558EAD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E7BD059AC02E96BB9C6C11B4 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				51F61AC69B0A4E3EBE8B50DB /* PBXTargetDependency */,
+				BDF2ACDD1B1042FBA202D782 /* PBXTargetDependency */,
+				6CA066CE557F49E7ABD01291 /* PBXTargetDependency */,
+				4294904F9A7F4AE7A88E2EAF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		2E38E90F6775456EAB5577E9 /* docs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AB7A2EF9BCC0497FB9DE460F /* Build configuration list for PBXAggregateTarget "docs" */;
+			buildPhases = (
+				9C5D058ECE4DB95FB1C315AE /* Generate docs/CMakeFiles/docs */,
+			);
+			dependencies = (
+				8ED4E513ADDE42B08F39F883 /* PBXTargetDependency */,
+			);
+			name = docs;
+			productName = docs;
+		};
+		2F6DB98C984D48C182D8D194 /* Experimental */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C141CD5358D941C98ED9F2EE /* Build configuration list for PBXAggregateTarget "Experimental" */;
+			buildPhases = (
+				0256E07F4D414BB026AE919A /* Generate CMakeFiles/Experimental */,
+			);
+			dependencies = (
+				6D3766D02CFC45B2A6A62094 /* PBXTargetDependency */,
+			);
+			name = Experimental;
+			productName = Experimental;
+		};
+		3DEC7B3EC5E2406993451948 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8608D89DD3A44FB3A50D21F5 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
 			buildPhases = (
 				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
 			);
@@ -29,77 +69,37 @@
 			name = RUN_TESTS;
 			productName = RUN_TESTS;
 		};
-		36D630462F6A4F55AE827FD8 /* docs */ = {
+		4260DAC51987417DA8B7AD64 /* Nightly */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = DA4BFC04FF2446188DB36831 /* Build configuration list for PBXAggregateTarget "docs" */;
-			buildPhases = (
-				9C5D058ECE4DB95FB1C315AE /* Generate docs/CMakeFiles/docs */,
-			);
-			dependencies = (
-				D154557D842D43619D8D6A49 /* PBXTargetDependency */,
-			);
-			name = docs;
-			productName = docs;
-		};
-		57DBB246CA23443D9A975CB4 /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 8CC3658E9ACF42D796BFE85A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				E7BD059AC02E96BB9C6C11B4 /* Generate CMakeFiles/ALL_BUILD */,
-			);
-			dependencies = (
-				39F7B2231BA04C668F56BD7E /* PBXTargetDependency */,
-				1879EB1CE3BE4E70BB1C3CF1 /* PBXTargetDependency */,
-				864D6A86C705471382A4EC8F /* PBXTargetDependency */,
-				BE613D08440141A4B95DA5F0 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
-		79CFB8F42C0E4C84926E9D7D /* Experimental */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 0A62081D5F974C6388571D02 /* Build configuration list for PBXAggregateTarget "Experimental" */;
-			buildPhases = (
-				0256E07F4D414BB026AE919A /* Generate CMakeFiles/Experimental */,
-			);
-			dependencies = (
-				CAE7AECE922443658DA4E78A /* PBXTargetDependency */,
-			);
-			name = Experimental;
-			productName = Experimental;
-		};
-		B6634234D64C46DEAAAEF53C /* Nightly */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D308196E8F4C46FCBA199EB4 /* Build configuration list for PBXAggregateTarget "Nightly" */;
+			buildConfigurationList = B49CEB76D8FA435DBABB48F9 /* Build configuration list for PBXAggregateTarget "Nightly" */;
 			buildPhases = (
 				B7DAB95A41C830563BA10224 /* Generate CMakeFiles/Nightly */,
 			);
 			dependencies = (
-				2CE8FF7849E640839CA04918 /* PBXTargetDependency */,
+				A01D62AC48D54596AA6B063F /* PBXTargetDependency */,
 			);
 			name = Nightly;
 			productName = Nightly;
 		};
-		F7DEEAD6B5C14CC29BA4510B /* NightlyMemoryCheck */ = {
+		B988D44CE2654181A053CAEC /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 69902C34ADC649BD94271758 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */;
+			buildConfigurationList = AAA5599D78154B528A580B47 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				2F7B89DD4E82073DE5D8D8DE /* Generate CMakeFiles/NightlyMemoryCheck */,
+				E594FF7834D0B496D8A981C0 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
 			dependencies = (
-				0E0C8F0BA92B4FC9A405E12F /* PBXTargetDependency */,
 			);
-			name = NightlyMemoryCheck;
-			productName = NightlyMemoryCheck;
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
 		};
-		F9F6E8F1E7E1411F8E2E795B /* Continuous */ = {
+		FE79591981E24AD39405E8C6 /* Continuous */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 562F4233CA1B4F068F74EB0B /* Build configuration list for PBXAggregateTarget "Continuous" */;
+			buildConfigurationList = C7AEB884809341E88D58A083 /* Build configuration list for PBXAggregateTarget "Continuous" */;
 			buildPhases = (
 				CBD1BADA900A12BA56E3C721 /* Generate CMakeFiles/Continuous */,
 			);
 			dependencies = (
-				A165463392AA4A26A33FC11E /* PBXTargetDependency */,
+				7C17928FEAEE4B379CAFD8D5 /* PBXTargetDependency */,
 			);
 			name = Continuous;
 			productName = Continuous;
@@ -107,187 +107,187 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0337C24F373A4726B7463428 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BF998CD40AB44BBB967647A1 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */; };
-		1FE7F9748B9C4BBFAE142923 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */ = {isa = PBXBuildFile; fileRef = 20988B1B2A1E440CB77806CF /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */; };
-		5616D2844B654D828EC37A47 /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */ = {isa = PBXBuildFile; fileRef = 773E7D7ADFAE43C6AB7E58CA /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */; };
-		589A1DB6AB674E7384D8CA27 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */ = {isa = PBXBuildFile; fileRef = A228670E141748BCA3F1A150 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */; };
-		68A297CD5D27419892A77982 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0932C452C15F4507B0E02C99 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */; };
-		6B3D0A649AC7493E80B2A711 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */ = {isa = PBXBuildFile; fileRef = 4240FF120CFB487F8F6ADA8B /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */; };
-		970C9F0CB6844BE7A760DB21 /* /Users/pw/GitHub/phulkan/generators/graphics.cpp */ = {isa = PBXBuildFile; fileRef = 00380B1C92F34E3E86F97AE8 /* /Users/pw/GitHub/phulkan/generators/graphics.cpp */; };
-		A9929E7F79D54543B02B3097 /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6E2F8E89A6934DCDB9C3B2D9 /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */; };
-		C4CA53B6A4D04F82B03EFE86 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */ = {isa = PBXBuildFile; fileRef = 1B64F8612B4647AC80E136AD /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */; };
+		5D18980E55C24809B18D7330 /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2F3D3FFB8A3040B28F155E0E /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */; };
+		72EBDB8DEC5C4947A59267FD /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */ = {isa = PBXBuildFile; fileRef = 62A1936146A54253B11CDABC /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */; };
+		A3B8DD2EE6EA4017A048BC68 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */ = {isa = PBXBuildFile; fileRef = 5AE3324FAB524A0AA7DAA667 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */; };
+		AAE627CF766D45BD9DC0DCCB /* /Users/pw/GitHub/phulkan/src/generators/graphics.cpp */ = {isa = PBXBuildFile; fileRef = 28DA7AFFAFEF45229C199962 /* /Users/pw/GitHub/phulkan/src/generators/graphics.cpp */; };
+		BA531F66AA044E479831004E /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */ = {isa = PBXBuildFile; fileRef = 0CF4173CA27B483580C90EE3 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */; };
+		CED5B968D53F4CCEBB6CB024 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */ = {isa = PBXBuildFile; fileRef = DC96357FC75D493DABB6D2EC /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */; };
+		D1C1C311D24A41698A003276 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */ = {isa = PBXBuildFile; fileRef = F2227B60669746EE906D65E9 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */; };
+		D256710E9C83460D815ACC5A /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4DB9B72B88DD4839AD442F55 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */; };
+		EAB20D1327BA43ECA55DE8A5 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7EBA2A654CDE4A4DBDBEB87F /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		27E10B4A911A478A85CB25DA /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		66F7F6CF1BE64C2A9D5ABF5B /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		91D168134A93477FA49989A3 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		EE4896D2622A4F3DB6B0CDF1 /* MinSizeRel */ = {
+		1D0058DA0D354A05A4FAB3FF /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
+		7FC904222D2B4F5EADAEC06B /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		B59AE6C5080E4D328BF1BCF7 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		BF65FFB68D4B439888236430 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		37C409F3F9154A6AB87E89EE /* PBXContainerItemProxy */ = {
+		316FA276512C47FF994A0DD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
-		3CB49BF99059467FB0668604 /* PBXContainerItemProxy */ = {
+		3172B6E92C064CD68C225A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = 5A8FAC6D4CAF498B8C24FE29;
+			remoteInfo = phulkan_library;
+		};
+		3905A6265ECA46C1862EA23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
-		58803FC3DE574EF59408C10F /* PBXContainerItemProxy */ = {
+		4EC9DE1617A0455586DA4493 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F35FFCAEDF644CF8B062B7AE;
+			remoteGlobalIDString = D34D8FF2C2324C6394563D78;
+			remoteInfo = graphics_generator;
+		};
+		669C7A171EA84E1F954F976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D34D8FF2C2324C6394563D78;
+			remoteInfo = graphics_generator;
+		};
+		6FAA3C4712CB41BA98C800FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
+			remoteInfo = ZERO_CHECK;
+		};
+		8297460F925D46F49C24A7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10BBD85A2EA04090B7C4559E;
 			remoteInfo = testlib;
 		};
-		6D6E63A97C5B4904B6519B79 /* PBXContainerItemProxy */ = {
+		AD98EDD5D62F4C9592E9E6B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
-		6E18CDCF1237471EA51C9AA1 /* PBXContainerItemProxy */ = {
+		B043B76D424E48EE8AC72561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
-		761D209FC7BA4388AB724E42 /* PBXContainerItemProxy */ = {
+		B8C07CEF3D4F40A7B4EE14BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
-		786212BF4DF94E04ABB31A20 /* PBXContainerItemProxy */ = {
+		C386B01E7386483BA1A14679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
-		AF655F30F73449CB96570CC3 /* PBXContainerItemProxy */ = {
+		D298F7D7A354451394ED7126 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9490705DA7A24686BB5D9EF1;
-			remoteInfo = graphics_generator;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
+			remoteInfo = ZERO_CHECK;
 		};
-		B3EC071186E1485F9F50D21E /* PBXContainerItemProxy */ = {
+		E3CA6B93B1CF41CA885F4721 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B020F6F282F43BDB074486E;
+			remoteGlobalIDString = 5A8FAC6D4CAF498B8C24FE29;
 			remoteInfo = phulkan_library;
 		};
-		B8F218BB020C4D498C192023 /* PBXContainerItemProxy */ = {
+		ED210F4863CB4C238811919E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
+			containerPortal = 4356EB94140940629ECE82CA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
-			remoteInfo = ZERO_CHECK;
-		};
-		BB2F4A060102441F8E2FB61B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B020F6F282F43BDB074486E;
-			remoteInfo = phulkan_library;
-		};
-		C68DA83E084C43D4B73186D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9490705DA7A24686BB5D9EF1;
-			remoteInfo = graphics_generator;
-		};
-		F5E40038050C43EEB8933DB5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
-			remoteInfo = ZERO_CHECK;
-		};
-		FC2618AF00EA418AA7698DF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD7C4456B057422389FB1AB7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1654EBB0838444668C3DCAFD;
+			remoteGlobalIDString = B988D44CE2654181A053CAEC;
 			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00380B1C92F34E3E86F97AE8 /* /Users/pw/GitHub/phulkan/generators/graphics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = graphics.cpp; path = generators/graphics.cpp; sourceTree = SOURCE_ROOT; };
-		0932C452C15F4507B0E02C99 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		097539F10D6C4491A54C357E /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		1B64F8612B4647AC80E136AD /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = graphics_info.hpp; path = xbuild/src/graphics_info.hpp; sourceTree = SOURCE_ROOT; };
-		20988B1B2A1E440CB77806CF /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = graphics_info.hpp.rule; path = xbuild/src/graphics_info.hpp.rule; sourceTree = SOURCE_ROOT; };
-		217666378C76455AAB682731 /* /Users/pw/GitHub/phulkan/docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = docs/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		25A36B2282AA42B1BBB48318 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4240FF120CFB487F8F6ADA8B /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testlib.cpp; path = tests/testlib.cpp; sourceTree = SOURCE_ROOT; };
-		4A5746D14D044D8EB04C2142 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		622D7CED5A6B41AB9EFE7DA2 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		658E9F09129540EFB3DB66FD /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		6E2F8E89A6934DCDB9C3B2D9 /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		773E7D7ADFAE43C6AB7E58CA /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = phulkan.cpp; path = src/phulkan.cpp; sourceTree = SOURCE_ROOT; };
-		77551F33225F4D0AAA7E2400 /* graphics_generator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = graphics_generator; sourceTree = BUILT_PRODUCTS_DIR; };
-		9976819C65BE4064AF94A388 /* /Users/pw/GitHub/phulkan/docs/mainpage.md */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mainpage.md; path = docs/mainpage.md; sourceTree = SOURCE_ROOT; };
-		A228670E141748BCA3F1A150 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = phulkan.hpp; path = include/phulkan/phulkan.hpp; sourceTree = SOURCE_ROOT; };
-		B33F381B18A5461CA8459C58 /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF998CD40AB44BBB967647A1 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		C305F1ACB230464DA7537FBC /* phulkan_library */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libphulkan_library.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB2A8AD8737400B91B2A93E /* /Users/pw/GitHub/phulkan/docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = docs/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0CF4173CA27B483580C90EE3 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = phulkan.hpp; path = include/phulkan/phulkan.hpp; sourceTree = SOURCE_ROOT; };
+		28DA7AFFAFEF45229C199962 /* /Users/pw/GitHub/phulkan/src/generators/graphics.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = graphics.cpp; path = src/generators/graphics.cpp; sourceTree = SOURCE_ROOT; };
+		29C61BAF4EC34B1CAFF8E003 /* testlib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = testlib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3D3FFB8A3040B28F155E0E /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = tests/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		35B5E57897484EF9A0B77776 /* graphics_generator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = graphics_generator; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EB6E0F0FCB494081219380 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4CE75BD7BD564448B7AAE3C0 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4DB9B72B88DD4839AD442F55 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5AE3324FAB524A0AA7DAA667 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = graphics_info.hpp; path = xbuild/src/graphics_info.hpp; sourceTree = SOURCE_ROOT; };
+		62A1936146A54253B11CDABC /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = phulkan.cpp; path = src/phulkan.cpp; sourceTree = SOURCE_ROOT; };
+		69AB56568C4B480AB7D51390 /* phulkan_library */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libphulkan_library.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69AEC136CFE04D4B9ED4A326 /* /Users/pw/GitHub/phulkan/docs/mainpage.md */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mainpage.md; path = docs/mainpage.md; sourceTree = SOURCE_ROOT; };
+		7EBA2A654CDE4A4DBDBEB87F /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		90FA524B1D724277A0F6C8E8 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BA269C5ECE9342678FF563A8 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CDA0E9AAF3A046799E54BD92 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DC96357FC75D493DABB6D2EC /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = graphics_info.hpp.rule; path = xbuild/src/graphics_info.hpp.rule; sourceTree = SOURCE_ROOT; };
+		F2227B60669746EE906D65E9 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testlib.cpp; path = tests/testlib.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A1D1E186122447D813B2B8B /* Frameworks */ = {
+		2D7ADFFBCCCC4611BC9F78F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C7E68E99805483BA82EE23F /* Frameworks */ = {
+		3B5D220A569B4F0EBBAB4FC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A921F7A85C845B9BA7A1540 /* Frameworks */ = {
+		E072E02DEEB54DACAC47AEBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,315 +297,315 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07487D89D9F84B638153BD85 /* testlib */ = {
+		08E544D76FE84801B303B082 /* Continuous */ = {
 			isa = PBXGroup;
 			children = (
-				465B331010D045C1A5D2C7C9 /* Source Files */,
-				6E2F8E89A6934DCDB9C3B2D9 /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */,
+				34513B365EA144FC8D161D02 /* CMake Rules */,
+				39EB6E0F0FCB494081219380 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
 			);
-			name = testlib;
+			name = Continuous;
 			sourceTree = "<group>";
 		};
-		085AA6FCEAB24F95BBDD45A8 /* CMake Rules */ = {
+		0E0C35A40EED4F2299DD3A5F /* phulkan */ = {
 			isa = PBXGroup;
 			children = (
+				0CF4173CA27B483580C90EE3 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */,
 			);
-			name = "CMake Rules";
+			name = phulkan;
 			sourceTree = "<group>";
 		};
-		11AB1DDBFDB04DB18D6D72CE /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		17A8F9C132B34D77B17ACE9B /* graphics_generator */ = {
-			isa = PBXGroup;
-			children = (
-				93E3F12FE0C34820B68CAF3F /* Source Files */,
-				0932C452C15F4507B0E02C99 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */,
-			);
-			name = graphics_generator;
-			sourceTree = "<group>";
-		};
-		3464C5E0854C4F9A83954791 /* CMake Rules */ = {
+		1922FA38DB9E45618E5AD967 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		3DC3F067F4EE4BAEA90C63DC /* Header Files */ = {
+		2B6DF27087544424BF23C901 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				C24C8FCA5FCD4F1AAFD88660 /* phulkan */,
-				1B64F8612B4647AC80E136AD /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */,
+				DC96357FC75D493DABB6D2EC /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */,
 			);
-			name = "Header Files";
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		465B331010D045C1A5D2C7C9 /* Source Files */ = {
+		34513B365EA144FC8D161D02 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				4240FF120CFB487F8F6ADA8B /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */,
 			);
-			name = "Source Files";
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		46E87FE6883A4DB98573EE6B /* Nightly */ = {
+		3CE41081B665413CA0CB0BBB /* docs */ = {
 			isa = PBXGroup;
 			children = (
-				97BD207F2C0A49F38FD56DFF /* CMake Rules */,
-				097539F10D6C4491A54C357E /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
+				690809EA5F354C6184BFC678 /* CMake Rules */,
+				69AEC136CFE04D4B9ED4A326 /* /Users/pw/GitHub/phulkan/docs/mainpage.md */,
+				0BB2A8AD8737400B91B2A93E /* /Users/pw/GitHub/phulkan/docs/CMakeLists.txt */,
+			);
+			name = docs;
+			sourceTree = "<group>";
+		};
+		461E1CB7AEFA4A319911A083 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4C574E586075413681DBDF1F /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				8281A5F9FF5B4DEEBEBB8D92 /* CMake Rules */,
+				4CE75BD7BD564448B7AAE3C0 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
 			);
 			name = Nightly;
 			sourceTree = "<group>";
 		};
-		4FA34509932E4A35A4F31083 /* CMake Rules */ = {
+		5785286CCB6346D4896EA50A /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				20988B1B2A1E440CB77806CF /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp.rule */,
+				0E0C35A40EED4F2299DD3A5F /* phulkan */,
+				5AE3324FAB524A0AA7DAA667 /* /Users/pw/GitHub/phulkan/xbuild/src/graphics_info.hpp */,
 			);
-			name = "CMake Rules";
+			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		554B273E206D4A5B96D4ADBC /* ALL_BUILD */ = {
+		60627FCB07514B5486482CF3 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				E05DE64551804429951D5A11 /* CMake Rules */,
-				658E9F09129540EFB3DB66FD /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		60895B1CA11B483D9E383948 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				773E7D7ADFAE43C6AB7E58CA /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */,
+				28DA7AFFAFEF45229C199962 /* /Users/pw/GitHub/phulkan/src/generators/graphics.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		6CDC915E34344DD18708E3F4 /* NightlyMemoryCheck */ = {
+		66B75232BB0B4FF8B4159B64 /* graphics_generator */ = {
 			isa = PBXGroup;
 			children = (
-				085AA6FCEAB24F95BBDD45A8 /* CMake Rules */,
-				25A36B2282AA42B1BBB48318 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
+				60627FCB07514B5486482CF3 /* Source Files */,
+				7EBA2A654CDE4A4DBDBEB87F /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */,
 			);
-			name = NightlyMemoryCheck;
+			name = graphics_generator;
 			sourceTree = "<group>";
 		};
-		7BC9C5CA947C4C1091C94F75 /* Experimental */ = {
+		690809EA5F354C6184BFC678 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				11AB1DDBFDB04DB18D6D72CE /* CMake Rules */,
-				622D7CED5A6B41AB9EFE7DA2 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
 			);
-			name = Experimental;
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		836B9E6331CE40B3A3087484 /* Frameworks */ = {
+		73E3A1F416DB465A97D03FC2 /* testlib */ = {
+			isa = PBXGroup;
+			children = (
+				D496ACB4F3364D1BA1C57F70 /* Source Files */,
+				2F3D3FFB8A3040B28F155E0E /* /Users/pw/GitHub/phulkan/tests/CMakeLists.txt */,
+			);
+			name = testlib;
+			sourceTree = "<group>";
+		};
+		783C66A630504EF8B91E0781 /* CTestDashboardTargets */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF518C30F84A79B9C0C363 /* NightlyMemoryCheck */,
+				4C574E586075413681DBDF1F /* Nightly */,
+				08E544D76FE84801B303B082 /* Continuous */,
+				943DD831E5FA4C0BA4706442 /* Experimental */,
+			);
+			name = CTestDashboardTargets;
+			sourceTree = "<group>";
+		};
+		807E1CD4FBCD453FA431799D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DE811C68BBC3452AB9710744 /* CMake Rules */,
+				CDA0E9AAF3A046799E54BD92 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8281A5F9FF5B4DEEBEBB8D92 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8C80755CD59A42E98CAC35F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		93E3F12FE0C34820B68CAF3F /* Source Files */ = {
+		918D8973160D4229B9D0D4E9 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				00380B1C92F34E3E86F97AE8 /* /Users/pw/GitHub/phulkan/generators/graphics.cpp */,
+				62A1936146A54253B11CDABC /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		97BD207F2C0A49F38FD56DFF /* CMake Rules */ = {
+		943DD831E5FA4C0BA4706442 /* Experimental */ = {
 			isa = PBXGroup;
 			children = (
+				461E1CB7AEFA4A319911A083 /* CMake Rules */,
+				90FA524B1D724277A0F6C8E8 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
 			);
-			name = "CMake Rules";
+			name = Experimental;
 			sourceTree = "<group>";
 		};
-		AA2B1D1CBD794946BC16322C /* Continuous */ = {
+		B4CF518C30F84A79B9C0C363 /* NightlyMemoryCheck */ = {
 			isa = PBXGroup;
 			children = (
-				FDB80B2C8FAE4D74A712A670 /* CMake Rules */,
-				4A5746D14D044D8EB04C2142 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
+				1922FA38DB9E45618E5AD967 /* CMake Rules */,
+				BA269C5ECE9342678FF563A8 /* /Users/pw/GitHub/phulkan/CMakeLists.txt */,
 			);
-			name = Continuous;
+			name = NightlyMemoryCheck;
 			sourceTree = "<group>";
 		};
-		B956C985C3B546299C974A2D /* phulkan_library */ = {
+		D07A29E8150B48A59DA28E23 /* phulkan_library */ = {
 			isa = PBXGroup;
 			children = (
-				60895B1CA11B483D9E383948 /* Source Files */,
-				3DC3F067F4EE4BAEA90C63DC /* Header Files */,
-				4FA34509932E4A35A4F31083 /* CMake Rules */,
-				BF998CD40AB44BBB967647A1 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */,
+				918D8973160D4229B9D0D4E9 /* Source Files */,
+				5785286CCB6346D4896EA50A /* Header Files */,
+				2B6DF27087544424BF23C901 /* CMake Rules */,
+				4DB9B72B88DD4839AD442F55 /* /Users/pw/GitHub/phulkan/src/CMakeLists.txt */,
 			);
 			name = phulkan_library;
 			sourceTree = "<group>";
 		};
-		BDFFA9494D044E518CE12995 /* docs */ = {
+		D496ACB4F3364D1BA1C57F70 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				3464C5E0854C4F9A83954791 /* CMake Rules */,
-				9976819C65BE4064AF94A388 /* /Users/pw/GitHub/phulkan/docs/mainpage.md */,
-				217666378C76455AAB682731 /* /Users/pw/GitHub/phulkan/docs/CMakeLists.txt */,
+				F2227B60669746EE906D65E9 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */,
 			);
-			name = docs;
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		BF7F46E1611442C0A782E11E = {
+		D9A6DF5754464F30AF3EE4EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C957DF5B3C8740E5B31349BE /* CTestDashboardTargets */,
-				554B273E206D4A5B96D4ADBC /* ALL_BUILD */,
-				BDFFA9494D044E518CE12995 /* docs */,
-				B956C985C3B546299C974A2D /* phulkan_library */,
-				17A8F9C132B34D77B17ACE9B /* graphics_generator */,
-				07487D89D9F84B638153BD85 /* testlib */,
-				E787985EBDDB46AEAB0F436D /* Products */,
-				836B9E6331CE40B3A3087484 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		C24C8FCA5FCD4F1AAFD88660 /* phulkan */ = {
-			isa = PBXGroup;
-			children = (
-				A228670E141748BCA3F1A150 /* /Users/pw/GitHub/phulkan/include/phulkan/phulkan.hpp */,
-			);
-			name = phulkan;
-			sourceTree = "<group>";
-		};
-		C957DF5B3C8740E5B31349BE /* CTestDashboardTargets */ = {
-			isa = PBXGroup;
-			children = (
-				6CDC915E34344DD18708E3F4 /* NightlyMemoryCheck */,
-				46E87FE6883A4DB98573EE6B /* Nightly */,
-				AA2B1D1CBD794946BC16322C /* Continuous */,
-				7BC9C5CA947C4C1091C94F75 /* Experimental */,
-			);
-			name = CTestDashboardTargets;
-			sourceTree = "<group>";
-		};
-		E05DE64551804429951D5A11 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		E787985EBDDB46AEAB0F436D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				77551F33225F4D0AAA7E2400 /* graphics_generator */,
-				C305F1ACB230464DA7537FBC /* phulkan_library */,
-				B33F381B18A5461CA8459C58 /* testlib */,
+				35B5E57897484EF9A0B77776 /* graphics_generator */,
+				69AB56568C4B480AB7D51390 /* phulkan_library */,
+				29C61BAF4EC34B1CAFF8E003 /* testlib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDB80B2C8FAE4D74A712A670 /* CMake Rules */ = {
+		DE811C68BBC3452AB9710744 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F11CBB12E3724913A64BD8F9 = {
+			isa = PBXGroup;
+			children = (
+				783C66A630504EF8B91E0781 /* CTestDashboardTargets */,
+				807E1CD4FBCD453FA431799D /* ALL_BUILD */,
+				3CE41081B665413CA0CB0BBB /* docs */,
+				D07A29E8150B48A59DA28E23 /* phulkan_library */,
+				66B75232BB0B4FF8B4159B64 /* graphics_generator */,
+				73E3A1F416DB465A97D03FC2 /* testlib */,
+				D9A6DF5754464F30AF3EE4EC /* Products */,
+				8C80755CD59A42E98CAC35F7 /* Frameworks */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B020F6F282F43BDB074486E /* phulkan_library */ = {
+		10BBD85A2EA04090B7C4559E /* testlib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4986FCF6BFD49339D069C0D /* Build configuration list for PBXNativeTarget "phulkan_library" */;
+			buildConfigurationList = BF899C8CD80E435CA017D1D1 /* Build configuration list for PBXNativeTarget "testlib" */;
 			buildPhases = (
-				2F26B49595486A40A3EF1379 /* Generate src/graphics_info.hpp */,
-				027EAB41F0ED4B2087FA16D9 /* Sources */,
-				4A921F7A85C845B9BA7A1540 /* Frameworks */,
+				678E3BD7EF114BD58C93C3CF /* Sources */,
+				2D7ADFFBCCCC4611BC9F78F3 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				421ABA5FA4E544F68F56AC36 /* PBXTargetDependency */,
-				D5CBA20C5AEB441EB650218F /* PBXTargetDependency */,
-			);
-			name = phulkan_library;
-			productName = phulkan_library;
-			productReference = C305F1ACB230464DA7537FBC /* phulkan_library */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9490705DA7A24686BB5D9EF1 /* graphics_generator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF69B1288CA947B7AE2B95CC /* Build configuration list for PBXNativeTarget "graphics_generator" */;
-			buildPhases = (
-				FEE46673E93142DE97E67FC7 /* Sources */,
-				2C7E68E99805483BA82EE23F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7AEBFF04F23A40EF85019742 /* PBXTargetDependency */,
-			);
-			name = graphics_generator;
-			productName = graphics_generator;
-			productReference = 77551F33225F4D0AAA7E2400 /* graphics_generator */;
-			productType = "com.apple.product-type.tool";
-		};
-		F35FFCAEDF644CF8B062B7AE /* testlib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B72141934A584E209460CAD3 /* Build configuration list for PBXNativeTarget "testlib" */;
-			buildPhases = (
-				1F1E054E3E474892909C574C /* Sources */,
-				2A1D1E186122447D813B2B8B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF6886DEB8DF4A0BA5F59576 /* PBXTargetDependency */,
-				163D20120A7D4C4BBAC51957 /* PBXTargetDependency */,
+				5B6E1C12D54541A29AF4DEDF /* PBXTargetDependency */,
+				9A525D48B981407BB5729FE8 /* PBXTargetDependency */,
 			);
 			name = testlib;
 			productName = testlib;
-			productReference = B33F381B18A5461CA8459C58 /* testlib */;
+			productReference = 29C61BAF4EC34B1CAFF8E003 /* testlib */;
+			productType = "com.apple.product-type.tool";
+		};
+		5A8FAC6D4CAF498B8C24FE29 /* phulkan_library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ECEB9782345441E95750430 /* Build configuration list for PBXNativeTarget "phulkan_library" */;
+			buildPhases = (
+				2F26B49595486A40A3EF1379 /* Generate src/graphics_info.hpp */,
+				EB2FF0662C3E49299CC7D3A2 /* Sources */,
+				E072E02DEEB54DACAC47AEBA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C6E0DEC32344F5AD669A3C /* PBXTargetDependency */,
+				45D719515049434685B9D164 /* PBXTargetDependency */,
+			);
+			name = phulkan_library;
+			productName = phulkan_library;
+			productReference = 69AB56568C4B480AB7D51390 /* phulkan_library */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D34D8FF2C2324C6394563D78 /* graphics_generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723BD951C85549E89D53E5B8 /* Build configuration list for PBXNativeTarget "graphics_generator" */;
+			buildPhases = (
+				47C3DA46795A4C3C9DBEA39D /* Sources */,
+				3B5D220A569B4F0EBBAB4FC8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E37DA4865BA43639DF5CE68 /* PBXTargetDependency */,
+			);
+			name = graphics_generator;
+			productName = graphics_generator;
+			productReference = 35B5E57897484EF9A0B77776 /* graphics_generator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CD7C4456B057422389FB1AB7 /* Project object */ = {
+		4356EB94140940629ECE82CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1250;
 			};
-			buildConfigurationList = B41BA2AA57884001A66EDE6C /* Build configuration list for PBXProject "phulkan" */;
+			buildConfigurationList = E5A94C208411423B99552631 /* Build configuration list for PBXProject "phulkan" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				66F7F6CF1BE64C2A9D5ABF5B /* Debug */,
-				27E10B4A911A478A85CB25DA /* Release */,
-				EE4896D2622A4F3DB6B0CDF1 /* MinSizeRel */,
-				91D168134A93477FA49989A3 /* RelWithDebInfo */,
+				BF65FFB68D4B439888236430 /* Debug */,
+				7FC904222D2B4F5EADAEC06B /* Release */,
+				1D0058DA0D354A05A4FAB3FF /* MinSizeRel */,
+				B59AE6C5080E4D328BF1BCF7 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = BF7F46E1611442C0A782E11E;
+			mainGroup = F11CBB12E3724913A64BD8F9;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
-				57DBB246CA23443D9A975CB4 /* ALL_BUILD */,
-				F9F6E8F1E7E1411F8E2E795B /* Continuous */,
-				79CFB8F42C0E4C84926E9D7D /* Experimental */,
-				B6634234D64C46DEAAAEF53C /* Nightly */,
-				F7DEEAD6B5C14CC29BA4510B /* NightlyMemoryCheck */,
-				186F9BDA70E5473AAB3F2450 /* RUN_TESTS */,
-				1654EBB0838444668C3DCAFD /* ZERO_CHECK */,
-				36D630462F6A4F55AE827FD8 /* docs */,
-				9490705DA7A24686BB5D9EF1 /* graphics_generator */,
-				3B020F6F282F43BDB074486E /* phulkan_library */,
-				F35FFCAEDF644CF8B062B7AE /* testlib */,
+				2D60A5802EC243508B04BF76 /* ALL_BUILD */,
+				FE79591981E24AD39405E8C6 /* Continuous */,
+				2F6DB98C984D48C182D8D194 /* Experimental */,
+				4260DAC51987417DA8B7AD64 /* Nightly */,
+				0591A8143D444244BDF2525D /* NightlyMemoryCheck */,
+				3DEC7B3EC5E2406993451948 /* RUN_TESTS */,
+				B988D44CE2654181A053CAEC /* ZERO_CHECK */,
+				2E38E90F6775456EAB5577E9 /* docs */,
+				D34D8FF2C2324C6394563D78 /* graphics_generator */,
+				5A8FAC6D4CAF498B8C24FE29 /* phulkan_library */,
+				10BBD85A2EA04090B7C4559E /* testlib */,
 			);
 		};
 /* End PBXProject section */
@@ -1032,107 +1032,127 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		027EAB41F0ED4B2087FA16D9 /* Sources */ = {
+		47C3DA46795A4C3C9DBEA39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5616D2844B654D828EC37A47 /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */,
+				AAE627CF766D45BD9DC0DCCB /* /Users/pw/GitHub/phulkan/src/generators/graphics.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F1E054E3E474892909C574C /* Sources */ = {
+		678E3BD7EF114BD58C93C3CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B3D0A649AC7493E80B2A711 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */,
+				D1C1C311D24A41698A003276 /* /Users/pw/GitHub/phulkan/tests/testlib.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEE46673E93142DE97E67FC7 /* Sources */ = {
+		EB2FF0662C3E49299CC7D3A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				970C9F0CB6844BE7A760DB21 /* /Users/pw/GitHub/phulkan/generators/graphics.cpp */,
+				72EBDB8DEC5C4947A59267FD /* /Users/pw/GitHub/phulkan/src/phulkan.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0E0C8F0BA92B4FC9A405E12F /* PBXTargetDependency */ = {
+		1E37DA4865BA43639DF5CE68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = 6E18CDCF1237471EA51C9AA1 /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = B043B76D424E48EE8AC72561 /* PBXContainerItemProxy */;
 		};
-		163D20120A7D4C4BBAC51957 /* PBXTargetDependency */ = {
+		4294904F9A7F4AE7A88E2EAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = 3CB49BF99059467FB0668604 /* PBXContainerItemProxy */;
+			target = 10BBD85A2EA04090B7C4559E /* testlib */;
+			targetProxy = 8297460F925D46F49C24A7CD /* PBXContainerItemProxy */;
 		};
-		1879EB1CE3BE4E70BB1C3CF1 /* PBXTargetDependency */ = {
+		45D719515049434685B9D164 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9490705DA7A24686BB5D9EF1 /* graphics_generator */;
-			targetProxy = C68DA83E084C43D4B73186D6 /* PBXContainerItemProxy */;
+			target = D34D8FF2C2324C6394563D78 /* graphics_generator */;
+			targetProxy = 4EC9DE1617A0455586DA4493 /* PBXContainerItemProxy */;
 		};
-		2CE8FF7849E640839CA04918 /* PBXTargetDependency */ = {
+		51F61AC69B0A4E3EBE8B50DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = B8F218BB020C4D498C192023 /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = B8C07CEF3D4F40A7B4EE14BE /* PBXContainerItemProxy */;
 		};
-		39F7B2231BA04C668F56BD7E /* PBXTargetDependency */ = {
+		53C6E0DEC32344F5AD669A3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B020F6F282F43BDB074486E /* phulkan_library */;
-			targetProxy = BB2F4A060102441F8E2FB61B /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = ED210F4863CB4C238811919E /* PBXContainerItemProxy */;
 		};
-		421ABA5FA4E544F68F56AC36 /* PBXTargetDependency */ = {
+		5B6E1C12D54541A29AF4DEDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9490705DA7A24686BB5D9EF1 /* graphics_generator */;
-			targetProxy = AF655F30F73449CB96570CC3 /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = 6FAA3C4712CB41BA98C800FC /* PBXContainerItemProxy */;
 		};
-		7AEBFF04F23A40EF85019742 /* PBXTargetDependency */ = {
+		6CA066CE557F49E7ABD01291 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = 786212BF4DF94E04ABB31A20 /* PBXContainerItemProxy */;
+			target = D34D8FF2C2324C6394563D78 /* graphics_generator */;
+			targetProxy = 669C7A171EA84E1F954F976A /* PBXContainerItemProxy */;
 		};
-		864D6A86C705471382A4EC8F /* PBXTargetDependency */ = {
+		6D3766D02CFC45B2A6A62094 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F35FFCAEDF644CF8B062B7AE /* testlib */;
-			targetProxy = 58803FC3DE574EF59408C10F /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = AD98EDD5D62F4C9592E9E6B4 /* PBXContainerItemProxy */;
 		};
-		A165463392AA4A26A33FC11E /* PBXTargetDependency */ = {
+		7C17928FEAEE4B379CAFD8D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = 37C409F3F9154A6AB87E89EE /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = 316FA276512C47FF994A0DD9 /* PBXContainerItemProxy */;
 		};
-		AF6886DEB8DF4A0BA5F59576 /* PBXTargetDependency */ = {
+		8ED4E513ADDE42B08F39F883 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B020F6F282F43BDB074486E /* phulkan_library */;
-			targetProxy = B3EC071186E1485F9F50D21E /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = 3905A6265ECA46C1862EA23A /* PBXContainerItemProxy */;
 		};
-		BE613D08440141A4B95DA5F0 /* PBXTargetDependency */ = {
+		9A525D48B981407BB5729FE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = F5E40038050C43EEB8933DB5 /* PBXContainerItemProxy */;
+			target = 5A8FAC6D4CAF498B8C24FE29 /* phulkan_library */;
+			targetProxy = 3172B6E92C064CD68C225A45 /* PBXContainerItemProxy */;
 		};
-		CAE7AECE922443658DA4E78A /* PBXTargetDependency */ = {
+		A01D62AC48D54596AA6B063F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = 761D209FC7BA4388AB724E42 /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = D298F7D7A354451394ED7126 /* PBXContainerItemProxy */;
 		};
-		D154557D842D43619D8D6A49 /* PBXTargetDependency */ = {
+		A2E5B882771140EFB93BA689 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = 6D6E63A97C5B4904B6519B79 /* PBXContainerItemProxy */;
+			target = B988D44CE2654181A053CAEC /* ZERO_CHECK */;
+			targetProxy = C386B01E7386483BA1A14679 /* PBXContainerItemProxy */;
 		};
-		D5CBA20C5AEB441EB650218F /* PBXTargetDependency */ = {
+		BDF2ACDD1B1042FBA202D782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1654EBB0838444668C3DCAFD /* ZERO_CHECK */;
-			targetProxy = FC2618AF00EA418AA7698DF9 /* PBXContainerItemProxy */;
+			target = 5A8FAC6D4CAF498B8C24FE29 /* phulkan_library */;
+			targetProxy = E3CA6B93B1CF41CA885F4721 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B91ED94A2CD423FAABF723F /* MinSizeRel */ = {
+		086C5956FD584EE190576A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		08B5F8A2A4524D59AA512AB4 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1150,9 +1170,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
+			name = RelWithDebInfo;
 		};
-		0BB04776612C4EB9AED51DC7 /* RelWithDebInfo */ = {
+		101E02BB315E4FC7A11315C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
@@ -1161,265 +1181,9 @@ exit 0";
 				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
 				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
 			};
-			name = RelWithDebInfo;
-		};
-		134E7F1E949A42CD8F843EB5 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = docs;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		16804B2A29C749AE8FE69725 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		175FDC306AC7425E97171B65 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src,"/Users/pw/GitHub/phulkan/xbuild/_deps/catch-src/single_include");
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = ("$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror    '-std=gnu++2a' ";
-				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/pw/GitHub/phulkan/xbuild/src/Debug/libphulkan_library.a);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = testlib;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/tests;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		218F218EEA5C4C208929C328 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		2298C79F25B740B5BD115A6D /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		2687113769144B5EB3E89479 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		2793604FCE0549D68D6DEBC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		2A7AEE2F845F4BFC8689485C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = ("$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror     -DNDEBUG '-std=gnu++2a' ";
-				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = graphics_generator;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
 			name = Release;
 		};
-		34F26ACB1FB3448983993094 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		3B97DB752BA743A597B9B7B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror    '-std=gnu++2a' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = phulkan_library;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		454714CCCFB34A9DBB39830E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		470AE6BA464B455EAED28E8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = docs;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		58ACB23B079E487291F900A6 /* Release */ = {
+		101E95B8D5D748C789FF2824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1445,123 +1209,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		5A1AC005C63647D6BC30023F /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		60119F3CA790464C8C7B3EF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror     -DNDEBUG '-std=gnu++2a' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = phulkan_library;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		62256B5821E24FC0B1E90D11 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6BA8DD773EF14226936A1B39 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.2;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
-			};
-			name = MinSizeRel;
-		};
-		6DBCAD5D5EA94687A0C92F2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		71DA60F3DEEF4578A2F86FE7 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = RUN_TESTS;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		7387E22FC9934F489AD3000A /* MinSizeRel */ = {
+		2335CCC4BF2F418AA78A2A7B /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1581,43 +1229,67 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		7A55F88C12E245FF9F24C251 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.2;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
-			};
-			name = Release;
-		};
-		7F25E99818984A849B2B2650 /* RelWithDebInfo */ = {
+		236D97078A494BA4BA7A61E6 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = ("$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror        -DNDEBUG '-std=gnu++2a' ";
-				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names");
+				OTHER_LDFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = graphics_generator;
+				PRODUCT_NAME = Experimental;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		240252FCFD77455982D44D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		26539730E7394E33B083E7AF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		8041BCE9C55B46D0BF76DEAA /* MinSizeRel */ = {
+		28508BCECE944B00BFD74ED1 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1642,7 +1314,27 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		862512F18F4A4828B7195ABA /* Debug */ = {
+		3378C309B2BD4BDDBC0ABA28 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3588198061FC48968A479AD6 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1660,9 +1352,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		86F9588D473B48FB838C5C38 /* Release */ = {
+		3AF0F6CAADD9447DBCADAD41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1674,7 +1366,7 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
+				PRODUCT_NAME = Continuous;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
 				USE_HEADERMAP = NO;
@@ -1682,7 +1374,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		92D19A99836B463889FDD65A /* MinSizeRel */ = {
+		3C7FB1E3043C4A219F5ED063 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1694,63 +1386,7 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		96304693DC6446FD94FDADED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = ("$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror    '-std=gnu++2a' ";
-				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = graphics_generator;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		A173D906513C4643A73019DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 11.2;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
-			};
-			name = Debug;
-		};
-		A495A85269C64002B0912B6E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
+				PRODUCT_NAME = Continuous;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
 				USE_HEADERMAP = NO;
@@ -1758,27 +1394,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		A7AB34D0C92241AFBF5A262A /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Nightly;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		A7FDF00CB90743F5AFF3CF0B /* RelWithDebInfo */ = {
+		3CEEA7D3FA924AD7BB858AA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1796,9 +1412,29 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
+			name = Debug;
+		};
+		46E82EBE1DC24F0AA58261EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
 			name = RelWithDebInfo;
 		};
-		B028BCFB92E14361B9C3790C /* Release */ = {
+		4859392EA88C4F18903DD7C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1816,114 +1452,34 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = Debug;
 		};
-		BA3D74A81BFD4B2ABD00B2D1 /* MinSizeRel */ = {
+		511A9AD8ABB5481DBAEAD263 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src);
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = ("$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror     -DNDEBUG '-std=gnu++2a' ";
-				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names");
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror        -DNDEBUG '-std=gnu++2a' ";
+				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = graphics_generator;
+				PRODUCT_NAME = phulkan_library;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
-		};
-		BE8B46ED76F145A6A36A3819 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = docs;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
 			name = RelWithDebInfo;
 		};
-		C9E02D60C11A4915ABF2C9C7 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		CD4FA65930A548A187CD4390 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = NightlyMemoryCheck;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		DED298428D424D49AB8C0AB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = docs;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		E21A1A39EDA1428AA5993D44 /* RelWithDebInfo */ = {
+		559D66A79A8445049251B900 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1949,7 +1505,364 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		E869E01B12C4425EA3AA7F7B /* Release */ = {
+		561A04EFBFC34DA995CA91BC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5A6CCF58410C4581BC35C813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5AF4BD2F501D42DEA01988C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror    '-std=gnu++2a' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = phulkan_library;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5D96578F4FB5413FB912A8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5F16C474C2D247CD946CF9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		609F542FDA474FA28841B476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror     -DNDEBUG '-std=gnu++2a' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = phulkan_library;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		61EF2F2FA0EB4D71B060FA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/pw/vulkansdk-macos-1.2.154.0/macOS/include",/Users/pw/GitHub/phulkan/src/glfw,/Users/pw/GitHub/phulkan/src/glm);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror     -DNDEBUG '-std=gnu++2a' ";
+				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib/libvulkan.dylib",/usr/local/lib/libglfw3.a,"-framework Cocoa","-framework IOKit","-framework CoreFoundation");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = graphics_generator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6320A3E961F04367A18BC758 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Experimental;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		66A8DD80464D4472BC5E0E78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6F9CACF6ABC745139E4AC40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		77F9030B9CE84C2BAE727BC1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7E2AA97F62CA434ABF835623 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		831A48EF3CC7494B8368D6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		913645476E4842C7AD06E85F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = docs;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		98581DDA94664ECC897BB340 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A00AA545FFB24319BA527655 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/pw/vulkansdk-macos-1.2.154.0/macOS/include",/Users/pw/GitHub/phulkan/src/glfw,/Users/pw/GitHub/phulkan/src/glm);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror     -DNDEBUG '-std=gnu++2a' ";
+				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib/libvulkan.dylib",/usr/local/lib/libglfw3.a,"-framework Cocoa","-framework IOKit","-framework CoreFoundation");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = graphics_generator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A0EA61953D324B598C1351C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Nightly;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A1BCF575E1B44D34BF4B812A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1969,7 +1882,211 @@ exit 0";
 			};
 			name = Release;
 		};
-		EB2519E443F1403F973A173A /* MinSizeRel */ = {
+		A69A603C0D744175A53601AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
+			};
+			name = Debug;
+		};
+		AC99FB898E274D80B8537A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src,"/Users/pw/GitHub/phulkan/xbuild/_deps/catch-src/single_include");
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror    '-std=gnu++2a' ";
+				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/pw/GitHub/phulkan/xbuild/src/Debug/libphulkan_library.a);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/tests;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AD5E7475CEA04F33A6769542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B8301672EC65402F80FAD06A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Continuous;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B8C2F5EB90704D03BC6B3D7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = NightlyMemoryCheck;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BE2A1DFD6D164DE58A35BC29 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C5A503B33C6D42F4ABA5B9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D60736C57BC74EE9A4032C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/pw/vulkansdk-macos-1.2.154.0/macOS/include",/Users/pw/GitHub/phulkan/src/glfw,/Users/pw/GitHub/phulkan/src/glm);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror    '-std=gnu++2a' ";
+				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib/libvulkan.dylib",/usr/local/lib/libglfw3.a,"-framework Cocoa","-framework IOKit","-framework CoreFoundation");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = graphics_generator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E7E2FEBE5ED7467B889C85AB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/build;
+			};
+			name = MinSizeRel;
+		};
+		FB34C3BD34E24133ACBF9798 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ("$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/pw/vulkansdk-macos-1.2.154.0/macOS/include",/Users/pw/GitHub/phulkan/src/glfw,/Users/pw/GitHub/phulkan/src/glm);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib";
+				LIBRARY_SEARCH_PATHS = ("$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror        -DNDEBUG '-std=gnu++2a' ";
+				OTHER_LDFLAGS = ("-L/usr/local/opt/qt/lib -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/pw/vulkansdk-macos-1.2.154.0/macOS/lib/libvulkan.dylib",/usr/local/lib/libglfw3.a,"-framework Cocoa","-framework IOKit","-framework CoreFoundation");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = graphics_generator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FC5D790E1C604FCA864B492A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1995,67 +2112,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		F217CF6C8CDD446E87079D5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Experimental;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		F250C2237F70440694326C0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Continuous;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		F4DA277F62A34AAC85587073 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		F4F93EA3DB3F42B3B6E68BC0 /* Release */ = {
+		FE2B59F4404D40AFAF542E52 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -2073,189 +2130,144 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
-		};
-		F5C8EF4547FC4077B64DE5B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		FBA048AAB37F40CBA68C38D6 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'kuk=3'");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/pw/GitHub/phulkan/src/../include,/Users/pw/GitHub/phulkan/xbuild/src);
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = " -Wall -Werror        -DNDEBUG '-std=gnu++2a' ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = phulkan_library;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pw/GitHub/phulkan/xbuild/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A62081D5F974C6388571D02 /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
+		2ECEB9782345441E95750430 /* Build configuration list for PBXNativeTarget "phulkan_library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F217CF6C8CDD446E87079D5E /* Debug */,
-				B028BCFB92E14361B9C3790C /* Release */,
-				92D19A99836B463889FDD65A /* MinSizeRel */,
-				62256B5821E24FC0B1E90D11 /* RelWithDebInfo */,
+				5AF4BD2F501D42DEA01988C4 /* Debug */,
+				609F542FDA474FA28841B476 /* Release */,
+				28508BCECE944B00BFD74ED1 /* MinSizeRel */,
+				511A9AD8ABB5481DBAEAD263 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		562F4233CA1B4F068F74EB0B /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
+		723BD951C85549E89D53E5B8 /* Build configuration list for PBXNativeTarget "graphics_generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				862512F18F4A4828B7195ABA /* Debug */,
-				F250C2237F70440694326C0C /* Release */,
-				2687113769144B5EB3E89479 /* MinSizeRel */,
-				5A1AC005C63647D6BC30023F /* RelWithDebInfo */,
+				D60736C57BC74EE9A4032C28 /* Debug */,
+				61EF2F2FA0EB4D71B060FA2B /* Release */,
+				A00AA545FFB24319BA527655 /* MinSizeRel */,
+				FB34C3BD34E24133ACBF9798 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		69902C34ADC649BD94271758 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
+		7434B4C128544566BD558EAD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2793604FCE0549D68D6DEBC9 /* Debug */,
-				CD4FA65930A548A187CD4390 /* Release */,
-				16804B2A29C749AE8FE69725 /* MinSizeRel */,
-				A495A85269C64002B0912B6E /* RelWithDebInfo */,
+				3CEEA7D3FA924AD7BB858AA3 /* Debug */,
+				A1BCF575E1B44D34BF4B812A /* Release */,
+				7E2AA97F62CA434ABF835623 /* MinSizeRel */,
+				BE2A1DFD6D164DE58A35BC29 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7B2F5A334213414D9DCCB615 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+		8608D89DD3A44FB3A50D21F5 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				454714CCCFB34A9DBB39830E /* Debug */,
-				F4F93EA3DB3F42B3B6E68BC0 /* Release */,
-				0B91ED94A2CD423FAABF723F /* MinSizeRel */,
-				71DA60F3DEEF4578A2F86FE7 /* RelWithDebInfo */,
+				6F9CACF6ABC745139E4AC40D /* Debug */,
+				C5A503B33C6D42F4ABA5B9D2 /* Release */,
+				FE2B59F4404D40AFAF542E52 /* MinSizeRel */,
+				08B5F8A2A4524D59AA512AB4 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8CC3658E9ACF42D796BFE85A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		AAA5599D78154B528A580B47 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4DA277F62A34AAC85587073 /* Debug */,
-				E869E01B12C4425EA3AA7F7B /* Release */,
-				C9E02D60C11A4915ABF2C9C7 /* MinSizeRel */,
-				A7FDF00CB90743F5AFF3CF0B /* RelWithDebInfo */,
+				5F16C474C2D247CD946CF9F8 /* Debug */,
+				AD5E7475CEA04F33A6769542 /* Release */,
+				2335CCC4BF2F418AA78A2A7B /* MinSizeRel */,
+				46E82EBE1DC24F0AA58261EA /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A4986FCF6BFD49339D069C0D /* Build configuration list for PBXNativeTarget "phulkan_library" */ = {
+		AB7A2EF9BCC0497FB9DE460F /* Build configuration list for PBXAggregateTarget "docs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B97DB752BA743A597B9B7B1 /* Debug */,
-				60119F3CA790464C8C7B3EF4 /* Release */,
-				8041BCE9C55B46D0BF76DEAA /* MinSizeRel */,
-				FBA048AAB37F40CBA68C38D6 /* RelWithDebInfo */,
+				240252FCFD77455982D44D20 /* Debug */,
+				831A48EF3CC7494B8368D6BA /* Release */,
+				913645476E4842C7AD06E85F /* MinSizeRel */,
+				3378C309B2BD4BDDBC0ABA28 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B41BA2AA57884001A66EDE6C /* Build configuration list for PBXProject "phulkan" */ = {
+		B49CEB76D8FA435DBABB48F9 /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A173D906513C4643A73019DA /* Debug */,
-				7A55F88C12E245FF9F24C251 /* Release */,
-				6BA8DD773EF14226936A1B39 /* MinSizeRel */,
-				0BB04776612C4EB9AED51DC7 /* RelWithDebInfo */,
+				5A6CCF58410C4581BC35C813 /* Debug */,
+				A0EA61953D324B598C1351C6 /* Release */,
+				561A04EFBFC34DA995CA91BC /* MinSizeRel */,
+				26539730E7394E33B083E7AF /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B72141934A584E209460CAD3 /* Build configuration list for PBXNativeTarget "testlib" */ = {
+		BF899C8CD80E435CA017D1D1 /* Build configuration list for PBXNativeTarget "testlib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				175FDC306AC7425E97171B65 /* Debug */,
-				58ACB23B079E487291F900A6 /* Release */,
-				EB2519E443F1403F973A173A /* MinSizeRel */,
-				E21A1A39EDA1428AA5993D44 /* RelWithDebInfo */,
+				AC99FB898E274D80B8537A99 /* Debug */,
+				101E95B8D5D748C789FF2824 /* Release */,
+				FC5D790E1C604FCA864B492A /* MinSizeRel */,
+				559D66A79A8445049251B900 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D308196E8F4C46FCBA199EB4 /* Build configuration list for PBXAggregateTarget "Nightly" */ = {
+		C141CD5358D941C98ED9F2EE /* Build configuration list for PBXAggregateTarget "Experimental" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DBCAD5D5EA94687A0C92F2D /* Debug */,
-				86F9588D473B48FB838C5C38 /* Release */,
-				A7AB34D0C92241AFBF5A262A /* MinSizeRel */,
-				2298C79F25B740B5BD115A6D /* RelWithDebInfo */,
+				4859392EA88C4F18903DD7C4 /* Debug */,
+				5D96578F4FB5413FB912A8C5 /* Release */,
+				236D97078A494BA4BA7A61E6 /* MinSizeRel */,
+				6320A3E961F04367A18BC758 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DA4BFC04FF2446188DB36831 /* Build configuration list for PBXAggregateTarget "docs" */ = {
+		C7AEB884809341E88D58A083 /* Build configuration list for PBXAggregateTarget "Continuous" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				470AE6BA464B455EAED28E8E /* Debug */,
-				DED298428D424D49AB8C0AB1 /* Release */,
-				134E7F1E949A42CD8F843EB5 /* MinSizeRel */,
-				BE8B46ED76F145A6A36A3819 /* RelWithDebInfo */,
+				B8301672EC65402F80FAD06A /* Debug */,
+				3AF0F6CAADD9447DBCADAD41 /* Release */,
+				3588198061FC48968A479AD6 /* MinSizeRel */,
+				3C7FB1E3043C4A219F5ED063 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DEA1E64A045D4C49AE0AB438 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		E43873B8E15F428BAB21FFE5 /* Build configuration list for PBXAggregateTarget "NightlyMemoryCheck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F5C8EF4547FC4077B64DE5B1 /* Debug */,
-				34F26ACB1FB3448983993094 /* Release */,
-				7387E22FC9934F489AD3000A /* MinSizeRel */,
-				218F218EEA5C4C208929C328 /* RelWithDebInfo */,
+				B8C2F5EB90704D03BC6B3D7C /* Debug */,
+				086C5956FD584EE190576A7E /* Release */,
+				98581DDA94664ECC897BB340 /* MinSizeRel */,
+				77F9030B9CE84C2BAE727BC1 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FF69B1288CA947B7AE2B95CC /* Build configuration list for PBXNativeTarget "graphics_generator" */ = {
+		E5A94C208411423B99552631 /* Build configuration list for PBXProject "phulkan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96304693DC6446FD94FDADED /* Debug */,
-				2A7AEE2F845F4BFC8689485C /* Release */,
-				BA3D74A81BFD4B2ABD00B2D1 /* MinSizeRel */,
-				7F25E99818984A849B2B2650 /* RelWithDebInfo */,
+				A69A603C0D744175A53601AA /* Debug */,
+				101E02BB315E4FC7A11315C2 /* Release */,
+				E7E2FEBE5ED7467B889C85AB /* MinSizeRel */,
+				66A8DD80464D4472BC5E0E78 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CD7C4456B057422389FB1AB7 /* Project object */;
+	rootObject = 4356EB94140940629ECE82CA /* Project object */;
 }

@@ -4,10 +4,14 @@ file(GLOB HEADER_LIST "${phulkan_SOURCE_DIR}/include/phulkan/*.hpp")
 file(GLOB SOURCE_LIST ./*.cpp)
 
 
-add_executable (graphics_generator ../generators/graphics.cpp)
-add_custom_command (
-	OUTPUT graphics_info.hpp 
-	COMMAND graphics_generator)
+# add_executable (graphics_generator ../generators/graphics.cpp)
+# add_custom_command (
+# 	OUTPUT graphics_info.hpp 
+# 	COMMAND graphics_generator)
+
+include (generators/CMakeLists.txt)
+
+
 
 
 # Make an automatic library - will be static or dynamic based on user setting
