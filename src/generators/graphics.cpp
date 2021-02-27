@@ -4,6 +4,7 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 #include <fstream>
+//#include <boost/preprocessor/
 
 //#include <GLFW/
 using namespace std;
@@ -16,10 +17,30 @@ using namespace std;
 #define CAT2(x, y) x##y
 #define CAT(x, y) CAT2(x, y)
 
+#include <filesystem>
+
+string readFileIntoString(const string& path) {
+      ifstream input_file(path);
+      if (!input_file.is_open()) {
+            cerr << "Could not open the file - '"
+            << path << "'" << endl;
+            exit(EXIT_FAILURE);
+      }
+      return string((std::istreambuf_iterator<char>(input_file)), std::istreambuf_iterator<char>());
+}
+
+
+
 int main (int argc, const char * argv[])
 {
+      cout << filesystem::current_path().c_str() << endl;
+      
       ofstream myfile;
       myfile.open ("graphics_info.hpp");
+      
+      string template_string = readFileIntoString (TEMPLATE_FILE);
+      cout << template_string << endl;
+      
       
       
       glfwInit();
@@ -99,21 +120,38 @@ int main (int argc, const char * argv[])
       
       cout << endl;
 string a = "SDA"
+      
       "SDL"
       "LM,SD";
-      
+//      system("open .");
+      cout << __FILE__ << endl;
       int nr_of_gpus = 0;
       for (auto& i : physicalDevices)
       {
-            
             auto props = getPhysicalDeviceProperties (i);
             auto feats = getPhysicalDeviceFeatures (i);
+            VkPhysicalDeviceLimits limits = props.limits;
+            
+            template_string += "\ntemplate <>\n"
+            "struct gpu<" + to_string (nr_of_gpus) + ">\n"
+            "{\n";
+            myfile << template_string;
+            
+            myfile << endl << "static constexpr uint32_t max_image_dimension_1D = " << to_string (limits.maxImageDimension1D) << ";" << endl << endl;
+            
+            myfile << "};" << endl;
+            break;
+            
+            
+            
+            
             
             string gpu = "#define GPU_" + to_string (nr_of_gpus);
             
             
             myfile << gpu + "_NAME = \"" + props.deviceName + "\"";
-            VkPhysicalDeviceLimits limits = props.limits;
+            
+            
             myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_1D = " + to_string (limits.maxImageDimension1D);
             myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_2D = " + to_string (limits.maxImageDimension2D);
             myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_3D = " + to_string (limits.maxImageDimension3D);
