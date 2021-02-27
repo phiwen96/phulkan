@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in phulkan
+phulkan_library in phulkan, depends on:
+ZERO_CHECK in phulkan (explicit)
+testlib in phulkan, depends on:
+ZERO_CHECK in phulkan (explicit)
+phulkan_library in phulkan (explicit)

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>04DCC363-3E11-41DF-B185-5139650BA572</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>04DCC363-3E11-41DF-B185-5139650BA572.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118420.72641301</real>
+			<key>timeStoppedRecording</key>
+			<real>636118420.80332601</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>04DCC363-3E11-41DF-B185-5139650BA572</string>
+		</dict>
+		<key>411C25B8-7EAD-4E0B-A997-DF1CF22DB964</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>411C25B8-7EAD-4E0B-A997-DF1CF22DB964.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118715.70255101</real>
+			<key>timeStoppedRecording</key>
+			<real>636118725.11890996</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>411C25B8-7EAD-4E0B-A997-DF1CF22DB964</string>
+		</dict>
+		<key>471CB893-828B-4D0F-97E1-79AEF00C2FB3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>471CB893-828B-4D0F-97E1-79AEF00C2FB3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118580.27572095</real>
+			<key>timeStoppedRecording</key>
+			<real>636118589.40522003</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>471CB893-828B-4D0F-97E1-79AEF00C2FB3</string>
+		</dict>
+		<key>AF92F0BD-02F7-4938-A384-C0AD8683FE77</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AF92F0BD-02F7-4938-A384-C0AD8683FE77.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118351.93032897</real>
+			<key>timeStoppedRecording</key>
+			<real>636118360.89892399</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>AF92F0BD-02F7-4938-A384-C0AD8683FE77</string>
+		</dict>
+		<key>D3817C0D-7F7A-4C75-B34B-5AAEF0DEAA40</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D3817C0D-7F7A-4C75-B34B-5AAEF0DEAA40.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118566.06646299</real>
+			<key>timeStoppedRecording</key>
+			<real>636118574.90023601</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>D3817C0D-7F7A-4C75-B34B-5AAEF0DEAA40</string>
+		</dict>
+		<key>E2FC0C8C-B738-48D7-9B5C-0547264376E3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E2FC0C8C-B738-48D7-9B5C-0547264376E3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118707.20126104</real>
+			<key>timeStoppedRecording</key>
+			<real>636118710.88356602</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>E2FC0C8C-B738-48D7-9B5C-0547264376E3</string>
+		</dict>
+		<key>F1072378-54DB-46A9-9C49-6E89F694A7DC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F1072378-54DB-46A9-9C49-6E89F694A7DC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>testlib</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build testlib</string>
+			<key>timeStartedRecording</key>
+			<real>636118397.28179705</real>
+			<key>timeStoppedRecording</key>
+			<real>636118406.89503098</real>
+			<key>title</key>
+			<string>Build testlib</string>
+			<key>uniqueIdentifier</key>
+			<string>F1072378-54DB-46A9-9C49-6E89F694A7DC</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
