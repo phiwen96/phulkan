@@ -98,7 +98,9 @@ int main (int argc, const char * argv[])
             cout << "\t" << i.layerName << endl;
       
       cout << endl;
-      
+string a = "SDA"
+      "SDL"
+      "LM,SD";
       
       int nr_of_gpus = 0;
       for (auto& i : physicalDevices)
@@ -155,20 +157,28 @@ int main (int argc, const char * argv[])
             myfile << endl << gpu + "_MAX_TESSELLATION_EVALUATION_INPUT_COMPONENTS = " + to_string (limits.maxTessellationEvaluationInputComponents);
             myfile << endl << gpu + "_MAX_TESSELLATION_EVALUATION_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationEvaluationOutputComponents);
             myfile << endl << gpu + "_MAX_GEOMETRY_SHADER_INVOCATIONS = " + to_string (limits.maxGeometryShaderInvocations);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-            myfile << endl << gpu + "_MAX_GEOMETRU_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-                                                                                                
+            myfile << endl << gpu + "_MAX_GEOMETRY_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
+            myfile << endl << gpu + "_MAX_GEOMETRY_OUTPUT_COMPONENTS = " + to_string (limits.maxGeometryOutputComponents);
+            myfile << endl << gpu + "_MAX_GEOMETRY_OUTPUT_VERTICES = " + to_string (limits.maxGeometryOutputVertices);
+            myfile << endl << gpu + "_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS = " + to_string (limits.maxGeometryTotalOutputComponents);
+            myfile << endl << gpu + "_MAX_FRAGMENT_INPUT_COMPONENTS= " + to_string (limits.maxFragmentInputComponents);
+            myfile << endl << gpu + "_MAX_FRAGMENT_OUTPUT_ATTACHMENTS = " + to_string (limits.maxFragmentOutputAttachments);
+            myfile << endl << gpu + "_MAX_FRAGMENT_DUAL_SRC_ATTACHMENTS = " + to_string (limits.maxFragmentDualSrcAttachments);
+            myfile << endl << gpu + "_MAX_FRAGMENT_COMBINED_OUTPUT_RESOURCES = " + to_string (limits.maxFragmentCombinedOutputResources);
+            myfile << endl << gpu + "_MAX_COMPUTE_SHARED_MEMORY_SIZE = " + to_string (limits.maxComputeSharedMemorySize);
+//            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_COUNT = " + to_string (limits.maxComputeWorkGroupCount);
+            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_INVOCATIONS = " + to_string (limits.maxComputeWorkGroupInvocations);
+//            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_SIZE = " + to_string (limits.maxComputeWorkGroupSize);
+            myfile << endl << gpu + "_SUB_PIXEL_PRECISION_BITS = " + to_string (limits.subPixelPrecisionBits);
+            myfile << endl << gpu + "_SUB_TEXEL_PRECISION_BITS = " + to_string (limits.subTexelPrecisionBits);
+            myfile << endl << gpu + "_MIPMAP_PRECISION_BITS = " + to_string (limits.mipmapPrecisionBits);
+            myfile << endl << gpu + "_MAX_DRAW_INDEXED_INDEX_VALUE = " + to_string (limits.maxDrawIndexedIndexValue);
+            myfile << endl << gpu + "_MAX_DRAW_INDIRECT_COUNT = " + to_string (limits.maxDrawIndirectCount);
+            myfile << endl << gpu + "_MAX_SAMPLER_LOD_BIAS = " + to_string (limits.maxSamplerLodBias);
+            myfile << endl << gpu + "_MAX_SAMPLER_ANISOTROPY = " + to_string (limits.maxSamplerAnisotropy);
+            myfile << endl << gpu + "_MAX_VIEWPORTS = " + to_string (limits.maxViewports);
+
+
                                                                                                   
 
             

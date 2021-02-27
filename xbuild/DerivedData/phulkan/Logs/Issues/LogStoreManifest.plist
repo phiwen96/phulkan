@@ -34,35 +34,7 @@
 			<key>uniqueIdentifier</key>
 			<string>255998E7-AFE7-46F1-866A-4B0D5816D539</string>
 		</dict>
-		<key>47311ADB-769D-434B-8F95-66AD80B3FD82</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
-			<key>fileName</key>
-			<string>47311ADB-769D-434B-8F95-66AD80B3FD82.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>ZERO_CHECK-blkuyvqfvkpljucacstvhuwlrxfo</string>
-			<key>timeStartedRecording</key>
-			<real>636137775.68585205</real>
-			<key>timeStoppedRecording</key>
-			<real>636137775.74677002</real>
-			<key>title</key>
-			<string>Build target ZERO_CHECK</string>
-			<key>uniqueIdentifier</key>
-			<string>47311ADB-769D-434B-8F95-66AD80B3FD82</string>
-		</dict>
-		<key>B8F76DF2-FE7E-4CA9-BDEB-0C37B71403E7</key>
+		<key>AF691B46-93B2-4847-87C5-170E50ECAB5A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,24 +43,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>B8F76DF2-FE7E-4CA9-BDEB-0C37B71403E7.xcactivitylog</string>
+			<string>AF691B46-93B2-4847-87C5-170E50ECAB5A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
 			<string>graphics_generator-blkuyvqfvkpljucacstvhuwlrxfo</string>
 			<key>timeStartedRecording</key>
-			<real>636137775.74782503</real>
+			<real>636138565.68991303</real>
 			<key>timeStoppedRecording</key>
-			<real>636137776.77499998</real>
+			<real>636138567.00255406</real>
 			<key>title</key>
 			<string>Build target graphics_generator</string>
 			<key>uniqueIdentifier</key>
-			<string>B8F76DF2-FE7E-4CA9-BDEB-0C37B71403E7</string>
+			<string>AF691B46-93B2-4847-87C5-170E50ECAB5A</string>
 		</dict>
 		<key>BF6F6F61-FFA7-48C2-9826-CCB4AAFD2E98</key>
 		<dict>
@@ -117,6 +89,34 @@
 			<string>Build target testlib</string>
 			<key>uniqueIdentifier</key>
 			<string>BF6F6F61-FFA7-48C2-9826-CCB4AAFD2E98</string>
+		</dict>
+		<key>C760B183-943F-4ACB-A485-3EBB46786221</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>C760B183-943F-4ACB-A485-3EBB46786221.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>ZERO_CHECK-blkuyvqfvkpljucacstvhuwlrxfo</string>
+			<key>timeStartedRecording</key>
+			<real>636138565.63788998</real>
+			<key>timeStoppedRecording</key>
+			<real>636138565.68939805</real>
+			<key>title</key>
+			<string>Build target ZERO_CHECK</string>
+			<key>uniqueIdentifier</key>
+			<string>C760B183-943F-4ACB-A485-3EBB46786221</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

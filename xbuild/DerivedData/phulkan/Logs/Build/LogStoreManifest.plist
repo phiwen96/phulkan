@@ -1638,6 +1638,40 @@
 			<key>uniqueIdentifier</key>
 			<string>616840E5-CEC1-433E-AFC1-98B7D52241E1</string>
 		</dict>
+		<key>6195A6BE-EB1D-4727-B105-80A701DCF2AE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6195A6BE-EB1D-4727-B105-80A701DCF2AE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636138461.77754998</real>
+			<key>timeStoppedRecording</key>
+			<real>636138463.262043</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>6195A6BE-EB1D-4727-B105-80A701DCF2AE</string>
+		</dict>
 		<key>61AD1E8C-FFEE-4420-8B93-716E93F7089A</key>
 		<dict>
 			<key>className</key>
@@ -1978,6 +2012,40 @@
 			<key>uniqueIdentifier</key>
 			<string>7AD642E6-6020-4DF6-BDC0-96D2B5D4A774</string>
 		</dict>
+		<key>7B480A08-DCEB-438F-AAB2-FD49AD84A35E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7B480A08-DCEB-438F-AAB2-FD49AD84A35E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636137817.45088196</real>
+			<key>timeStoppedRecording</key>
+			<real>636137819.14281905</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>7B480A08-DCEB-438F-AAB2-FD49AD84A35E</string>
+		</dict>
 		<key>7BCE81BD-6422-4695-BABA-76266605B52F</key>
 		<dict>
 			<key>className</key>
@@ -2216,6 +2284,40 @@
 			<key>uniqueIdentifier</key>
 			<string>8CC03D79-1C65-451D-86F5-6B2A8F77A028</string>
 		</dict>
+		<key>8DA9DBBB-314E-427B-A105-141954CD1C6C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8DA9DBBB-314E-427B-A105-141954CD1C6C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636138454.07019103</real>
+			<key>timeStoppedRecording</key>
+			<real>636138455.17461097</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>8DA9DBBB-314E-427B-A105-141954CD1C6C</string>
+		</dict>
 		<key>92CA1D1B-2FD2-4FF1-A259-8F475A7A5E89</key>
 		<dict>
 			<key>className</key>
@@ -2284,6 +2386,40 @@
 			<key>uniqueIdentifier</key>
 			<string>94B04779-E22D-4A70-880E-372A47573D1F</string>
 		</dict>
+		<key>97A11D4D-9987-4DC3-8E0C-B2F2E1C1E99B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>97A11D4D-9987-4DC3-8E0C-B2F2E1C1E99B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636138351.45479596</real>
+			<key>timeStoppedRecording</key>
+			<real>636138352.93448699</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>97A11D4D-9987-4DC3-8E0C-B2F2E1C1E99B</string>
+		</dict>
 		<key>997789D1-0160-49E8-B5E7-92DE5D43B7DA</key>
 		<dict>
 			<key>className</key>
@@ -2351,6 +2487,40 @@
 			<string>Build graphics_generator</string>
 			<key>uniqueIdentifier</key>
 			<string>9BAA17A5-13BC-48FB-B3CE-D4A4665DF635</string>
+		</dict>
+		<key>9BE82211-4F15-44ED-8BE7-9AA75A5D1645</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9BE82211-4F15-44ED-8BE7-9AA75A5D1645.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636138298.02062595</real>
+			<key>timeStoppedRecording</key>
+			<real>636138299.22238696</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>9BE82211-4F15-44ED-8BE7-9AA75A5D1645</string>
 		</dict>
 		<key>9D05FCDC-C71F-4180-BA65-212103E9E77A</key>
 		<dict>
@@ -2759,6 +2929,40 @@
 			<string>Build graphics_generator</string>
 			<key>uniqueIdentifier</key>
 			<string>C4F6C4B4-9C3D-42C4-A577-339156E69DEC</string>
+		</dict>
+		<key>C7B472C7-E163-4FFB-9DE2-E8BBE3FB5B15</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C7B472C7-E163-4FFB-9DE2-E8BBE3FB5B15.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636138565.617975</real>
+			<key>timeStoppedRecording</key>
+			<real>636138567.00487101</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>C7B472C7-E163-4FFB-9DE2-E8BBE3FB5B15</string>
 		</dict>
 		<key>C82DA7C0-5781-4A24-8B74-A46B51731476</key>
 		<dict>
