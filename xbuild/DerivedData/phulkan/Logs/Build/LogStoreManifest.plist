@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>019B8893-DEF9-460F-8D9C-9897ACEFEF78</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>019B8893-DEF9-460F-8D9C-9897ACEFEF78.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636219348.83661497</real>
+			<key>timeStoppedRecording</key>
+			<real>636219352.20606101</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>019B8893-DEF9-460F-8D9C-9897ACEFEF78</string>
+		</dict>
 		<key>0B28D3BB-3BE4-4BDA-9253-41AA54B0FD9C</key>
 		<dict>
 			<key>className</key>
@@ -107,6 +141,40 @@
 			<string>Build graphics_generator</string>
 			<key>uniqueIdentifier</key>
 			<string>1838971C-8760-4B73-A85A-AC4BF51321C0</string>
+		</dict>
+		<key>2A3B3713-4178-4648-A502-1006E487669A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2A3B3713-4178-4648-A502-1006E487669A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636219509.69827199</real>
+			<key>timeStoppedRecording</key>
+			<real>636219513.01114094</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>2A3B3713-4178-4648-A502-1006E487669A</string>
 		</dict>
 		<key>421DD481-97DE-459C-B553-2952C39F4E76</key>
 		<dict>
@@ -516,6 +584,40 @@
 			<key>uniqueIdentifier</key>
 			<string>B1B1F174-04D0-4B5E-826D-9648F24122D6</string>
 		</dict>
+		<key>B2A9FC86-1D36-46FB-9DCF-1FE70B20834C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B2A9FC86-1D36-46FB-9DCF-1FE70B20834C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636219375.31141901</real>
+			<key>timeStoppedRecording</key>
+			<real>636219377.693506</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>B2A9FC86-1D36-46FB-9DCF-1FE70B20834C</string>
+		</dict>
 		<key>CA370E38-B000-478C-97BE-A320A497AD20</key>
 		<dict>
 			<key>className</key>
@@ -583,6 +685,40 @@
 			<string>Build graphics_generator</string>
 			<key>uniqueIdentifier</key>
 			<string>DA26EDD3-0CA1-4E4E-84EC-9EBB4754283A</string>
+		</dict>
+		<key>E424F94B-BB52-4F4B-8BA6-CD654F2E1D0E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E424F94B-BB52-4F4B-8BA6-CD654F2E1D0E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>phulkan project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>graphics_generator</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build graphics_generator</string>
+			<key>timeStartedRecording</key>
+			<real>636219303.07325196</real>
+			<key>timeStoppedRecording</key>
+			<real>636219304.89091802</real>
+			<key>title</key>
+			<string>Build graphics_generator</string>
+			<key>uniqueIdentifier</key>
+			<string>E424F94B-BB52-4F4B-8BA6-CD654F2E1D0E</string>
 		</dict>
 		<key>EC3EFAA2-51A1-4930-B5EB-73C34440BB2D</key>
 		<dict>
