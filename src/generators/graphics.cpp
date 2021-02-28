@@ -1,5 +1,6 @@
 #include "graphics.hpp"
-
+#include <ostream>
+#include <type_traits>
 
 string readFileIntoString(const string& path) {
       ifstream input_file(path);
@@ -24,34 +25,103 @@ string readFileIntoString(const string& path) {
 
 struct read;
 struct write;
+struct End : string{
+      End () : string ("\n") {}
+//      friend ostream& operator<< (ostream& os, End const& e)
+//      {
+//            os << "\n";
+//            return os;
+//      }
+};End endit;
 
 template <class>
 struct file;
 
+template <class T, class U>
+concept convertible = is_convertible_v<T, U> and is_convertible_v<U, T>;
+
 template <>
-struct file <read> : public ostream
+struct file <write>
 {
-      ifstream m_file;
+      ofstream m_file;
+      using self = file<write>;
       
-      file (char const* n) : ostream(cout.rdbuf())//, m_file (n)
+      
+      file (char const* n)
       {
-            
+            m_file.open (n);
       }
-      
-      
-      
+
+      template <class T>
+      auto operator<< (T&& v) -> decltype (auto)
+      {
+            m_file << forward<T>(v);
+            return *this;
+      }
+
       ~file ()
       {
-//            m_file.close();
+            m_file.close ();
       }
 };
 
+void process (string& s)
+{
+      if (int b = s.find ("${"); b != string::npos)
+      {
+            if (int e = s.find ("}"); e != string::npos)
+            {
+                  cout << string (s.begin() + b + 2, s.begin() + e) << endl;
+                  
+            }
+      }
+};
+#define PROCESS5(x, y) y
+#define PROCESS4(x, y) {string s {x};\
+if (int b = s.find ("${"); b != string::npos)\
+{\
+      if (int e = s.find ("}"); e != string::npos)\
+      {\
+            cout << string (s.begin() + b + 2, s.begin() + e) << endl;\
+            \
+      }\
+}}
+#define PROCESS3(x) PROCESS4 (BOOST_PP_STRINGIZE (x), x);
 
+
+#define PROCESS2(x) if (x[0] == '$') cout << "fitta" << endl;
+#define PROCESS(file, str) PROCESS2 (BOOST_PP_STRINGIZE (str)); file << BOOST_PP_STRINGIZE (str)
+#define NN(x) {if (x == 0) 0}
+#include "gpus_info.hpp"
 int main (int argc, const char * argv[])
 {
+      cout << number_of_gpus << endl;
+      cout << (string("~") == string(")")) << endl;
+      int j = 10;
+//      cout << NR (j) << endl;
+//      string s = "kuk${i}fitta";
+      
+      cout << BOOST_PP_EXPAND(STR_BEGIN (template <>  NN (kiss)
+                         struct gpu<
+                         )) << endl;
+      PROCESS3 (int k kuk ${j} fitta);
+      return 0;
+//      cout << s << endl;
+//      s.replace (s.begin () + 3, s.begin () + 4, "+-");
+//      cout << s << endl;
+//      s.replace (s.begin () + 3, s.begin () + 5, "$");
+//      cout << s << endl;
+//      process(s);
+      return 0;
+      
+      int i = 3;
+      file <write> myfile ("graphics_info.hpp");
+
+      PROCESS(myfile, $i);
+      return 0;
       
       
-      file
+     
 
       
       
@@ -64,8 +134,7 @@ int main (int argc, const char * argv[])
       
       cout << filesystem::current_path().c_str() << endl;
       
-      ofstream myfile;
-      myfile.open ("graphics_info.hpp");
+
       
       string template_string = readFileIntoString (TEMPLATE_FILE);
 //      cout << template_string << endl;
@@ -190,11 +259,13 @@ int main (int argc, const char * argv[])
             
 //            template_string += "struct gpu<" + to_string (nr_of_gpus) + ">\n" +
            
-            myfile << template_string;
-            
-            myfile << endl << "static constexpr uint32_t max_image_dimension_1D = " << to_string (limits.maxImageDimension1D) << ";" << endl << endl;
-            
-            myfile << "};" << endl;
+//            myfile << template_string;
+//
+//            myfile << endit << "static constexpr uint32_t max_image_dimension_1D = " << to_string (limits.maxImageDimension1D) << ";" << endit << endit;
+//
+//            myfile << "};" << endit;
+//
+//            myfile << "kuk";
                  
             break;
             
@@ -205,73 +276,73 @@ int main (int argc, const char * argv[])
             string gpu = "#define GPU_" + to_string (nr_of_gpus);
             
             
-            myfile << gpu + "_NAME = \"" + props.deviceName + "\"";
+//            myfile << gpu + "_NAME = \"" + props.deviceName + "\"";
             
             
             {
-                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_1D = " + to_string (limits.maxImageDimension1D);
-                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_2D = " + to_string (limits.maxImageDimension2D);
-                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_3D = " + to_string (limits.maxImageDimension3D);
-                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_CUBE = " + to_string (limits.maxImageDimensionCube);
-                  myfile << endl << gpu + "_MAX_IMAGE_ARRAY_LAYERS = " + to_string (limits.maxImageArrayLayers);
-                  myfile << endl << gpu + "_MAX_TEXEL_BUFFER_ELEMENTS = " + to_string (limits.maxTexelBufferElements);
-                  myfile << endl << gpu + "_MAX_UNIFORM_BUFFER_RANGE = " + to_string (limits.maxUniformBufferRange);
-                  myfile << endl << gpu + "_MAX_STORAGE_BUFFER_RANGE = " + to_string (limits.maxStorageBufferRange);
-                  myfile << endl << gpu + "_MAX_PUSH_CONSTANTS_SIZE = " + to_string (limits.maxPushConstantsSize);
-                  myfile << endl << gpu + "_MAX_MEMORY_ALLOCATION_COUNT = " + to_string (limits.maxMemoryAllocationCount);
-                  myfile << endl << gpu + "_MAX_SAMPLER_ALLOCATION_COUNT = " + to_string (limits.maxSamplerAllocationCount);
-                  myfile << endl << gpu + "_BUFFER_IMAGE_GRANULARIY = " + to_string (limits.bufferImageGranularity);
-                  myfile << endl << gpu + "_SPARSE_ADDRESS_SPACE_SIZE = " + to_string (limits.sparseAddressSpaceSize);
-                  myfile << endl << gpu + "_MAX_BOUND_DESCRIPTOR_SETS = " + to_string (limits.maxBoundDescriptorSets);
-                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_SAMPLERS = " + to_string (limits.maxPerStageDescriptorSamplers);
-                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_UNIFORM_BUFFERS = " + to_string (limits.maxPerStageDescriptorUniformBuffers);
-                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_SAMPLED_IMAGES = " + to_string (limits.maxPerStageDescriptorSampledImages);
-                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_STORAGE_IMAGES = " + to_string (limits.maxPerStageDescriptorStorageImages);
-                  
-                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_INPUT_ATTACHMENTS = " + to_string (limits.maxPerStageDescriptorInputAttachments);
-                  myfile << endl << gpu + "_MAX_PER_STAGE_RESOURCES = " + to_string (limits.maxPerStageResources);
-                  myfile << endl << gpu + "_MAX_PER_SET_SAMPLERS= " + to_string (limits.maxDescriptorSetSamplers);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_UNIFORM_BUFFERS = " + to_string (limits.maxDescriptorSetUniformBuffers);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_UNIFORM_BUFFERS_DYNAMIC = " + to_string (limits.maxDescriptorSetUniformBuffersDynamic);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_STORAGE_BUFFERS = " + to_string (limits.maxDescriptorSetStorageBuffers);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_STORAGE_BUFFERS_DYNAMIC = " + to_string (limits.maxDescriptorSetStorageBuffersDynamic);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_SAMPLED_IMAGES = " + to_string (limits.maxDescriptorSetSampledImages);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_STORAGE_IMAGES = " + to_string (limits.maxDescriptorSetStorageImages);
-                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_INPUT_ATTACHMENTS = " + to_string (limits.maxDescriptorSetInputAttachments);
-                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_ATTRIBUTES = " + to_string (limits.maxVertexInputAttributes);
-                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_BINDINGS = " + to_string (limits.maxVertexInputBindings);
-                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_ATTRIBUTE_OFFSET = " + to_string (limits.maxVertexInputAttributeOffset);
-                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_BINDING_STRIDE = " + to_string (limits.maxVertexInputBindingStride);
-                  myfile << endl << gpu + "_MAX_VERTEX_OUTPUT_COMPONENTS = " + to_string (limits.maxVertexOutputComponents);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_GENERATION_LEVEL = " + to_string (limits.maxTessellationGenerationLevel);
-                  myfile << endl << gpu + "_MAX_PER_TESSELLATION_PATCH_SIZE = " + to_string (limits.maxTessellationPatchSize);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_PER_VERTEX_INPUT_COMPONENTS = " + to_string (limits.maxTessellationControlPerVertexInputComponents);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_PER_VERTEX_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationControlPerVertexInputComponents);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_PER_PATCH_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationControlPerPatchOutputComponents);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_TOTAL_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationControlTotalOutputComponents);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_EVALUATION_INPUT_COMPONENTS = " + to_string (limits.maxTessellationEvaluationInputComponents);
-                  myfile << endl << gpu + "_MAX_TESSELLATION_EVALUATION_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationEvaluationOutputComponents);
-                  myfile << endl << gpu + "_MAX_GEOMETRY_SHADER_INVOCATIONS = " + to_string (limits.maxGeometryShaderInvocations);
-                  myfile << endl << gpu + "_MAX_GEOMETRY_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
-                  myfile << endl << gpu + "_MAX_GEOMETRY_OUTPUT_COMPONENTS = " + to_string (limits.maxGeometryOutputComponents);
-                  myfile << endl << gpu + "_MAX_GEOMETRY_OUTPUT_VERTICES = " + to_string (limits.maxGeometryOutputVertices);
-                  myfile << endl << gpu + "_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS = " + to_string (limits.maxGeometryTotalOutputComponents);
-                  myfile << endl << gpu + "_MAX_FRAGMENT_INPUT_COMPONENTS= " + to_string (limits.maxFragmentInputComponents);
-                  myfile << endl << gpu + "_MAX_FRAGMENT_OUTPUT_ATTACHMENTS = " + to_string (limits.maxFragmentOutputAttachments);
-                  myfile << endl << gpu + "_MAX_FRAGMENT_DUAL_SRC_ATTACHMENTS = " + to_string (limits.maxFragmentDualSrcAttachments);
-                  myfile << endl << gpu + "_MAX_FRAGMENT_COMBINED_OUTPUT_RESOURCES = " + to_string (limits.maxFragmentCombinedOutputResources);
-                  myfile << endl << gpu + "_MAX_COMPUTE_SHARED_MEMORY_SIZE = " + to_string (limits.maxComputeSharedMemorySize);
-                  //            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_COUNT = " + to_string (limits.maxComputeWorkGroupCount);
-                  myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_INVOCATIONS = " + to_string (limits.maxComputeWorkGroupInvocations);
-                  //            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_SIZE = " + to_string (limits.maxComputeWorkGroupSize);
-                  myfile << endl << gpu + "_SUB_PIXEL_PRECISION_BITS = " + to_string (limits.subPixelPrecisionBits);
-                  myfile << endl << gpu + "_SUB_TEXEL_PRECISION_BITS = " + to_string (limits.subTexelPrecisionBits);
-                  myfile << endl << gpu + "_MIPMAP_PRECISION_BITS = " + to_string (limits.mipmapPrecisionBits);
-                  myfile << endl << gpu + "_MAX_DRAW_INDEXED_INDEX_VALUE = " + to_string (limits.maxDrawIndexedIndexValue);
-                  myfile << endl << gpu + "_MAX_DRAW_INDIRECT_COUNT = " + to_string (limits.maxDrawIndirectCount);
-                  myfile << endl << gpu + "_MAX_SAMPLER_LOD_BIAS = " + to_string (limits.maxSamplerLodBias);
-                  myfile << endl << gpu + "_MAX_SAMPLER_ANISOTROPY = " + to_string (limits.maxSamplerAnisotropy);
-                  myfile << endl << gpu + "_MAX_VIEWPORTS = " + to_string (limits.maxViewports);
+//                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_1D = " + to_string (limits.maxImageDimension1D);
+//                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_2D = " + to_string (limits.maxImageDimension2D);
+//                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_3D = " + to_string (limits.maxImageDimension3D);
+//                  myfile << endl << gpu + "_MAX_IMAGE_DIMENSION_CUBE = " + to_string (limits.maxImageDimensionCube);
+//                  myfile << endl << gpu + "_MAX_IMAGE_ARRAY_LAYERS = " + to_string (limits.maxImageArrayLayers);
+//                  myfile << endl << gpu + "_MAX_TEXEL_BUFFER_ELEMENTS = " + to_string (limits.maxTexelBufferElements);
+//                  myfile << endl << gpu + "_MAX_UNIFORM_BUFFER_RANGE = " + to_string (limits.maxUniformBufferRange);
+//                  myfile << endl << gpu + "_MAX_STORAGE_BUFFER_RANGE = " + to_string (limits.maxStorageBufferRange);
+//                  myfile << endl << gpu + "_MAX_PUSH_CONSTANTS_SIZE = " + to_string (limits.maxPushConstantsSize);
+//                  myfile << endl << gpu + "_MAX_MEMORY_ALLOCATION_COUNT = " + to_string (limits.maxMemoryAllocationCount);
+//                  myfile << endl << gpu + "_MAX_SAMPLER_ALLOCATION_COUNT = " + to_string (limits.maxSamplerAllocationCount);
+//                  myfile << endl << gpu + "_BUFFER_IMAGE_GRANULARIY = " + to_string (limits.bufferImageGranularity);
+//                  myfile << endl << gpu + "_SPARSE_ADDRESS_SPACE_SIZE = " + to_string (limits.sparseAddressSpaceSize);
+//                  myfile << endl << gpu + "_MAX_BOUND_DESCRIPTOR_SETS = " + to_string (limits.maxBoundDescriptorSets);
+//                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_SAMPLERS = " + to_string (limits.maxPerStageDescriptorSamplers);
+//                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_UNIFORM_BUFFERS = " + to_string (limits.maxPerStageDescriptorUniformBuffers);
+//                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_SAMPLED_IMAGES = " + to_string (limits.maxPerStageDescriptorSampledImages);
+//                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_STORAGE_IMAGES = " + to_string (limits.maxPerStageDescriptorStorageImages);
+//
+//                  myfile << endl << gpu + "_MAX_PER_STAGE_DESCRIPTOR_INPUT_ATTACHMENTS = " + to_string (limits.maxPerStageDescriptorInputAttachments);
+//                  myfile << endl << gpu + "_MAX_PER_STAGE_RESOURCES = " + to_string (limits.maxPerStageResources);
+//                  myfile << endl << gpu + "_MAX_PER_SET_SAMPLERS= " + to_string (limits.maxDescriptorSetSamplers);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_UNIFORM_BUFFERS = " + to_string (limits.maxDescriptorSetUniformBuffers);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_UNIFORM_BUFFERS_DYNAMIC = " + to_string (limits.maxDescriptorSetUniformBuffersDynamic);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_STORAGE_BUFFERS = " + to_string (limits.maxDescriptorSetStorageBuffers);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_STORAGE_BUFFERS_DYNAMIC = " + to_string (limits.maxDescriptorSetStorageBuffersDynamic);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_SAMPLED_IMAGES = " + to_string (limits.maxDescriptorSetSampledImages);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_STORAGE_IMAGES = " + to_string (limits.maxDescriptorSetStorageImages);
+//                  myfile << endl << gpu + "_MAX_DESCRIPTOR_SET_INPUT_ATTACHMENTS = " + to_string (limits.maxDescriptorSetInputAttachments);
+//                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_ATTRIBUTES = " + to_string (limits.maxVertexInputAttributes);
+//                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_BINDINGS = " + to_string (limits.maxVertexInputBindings);
+//                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_ATTRIBUTE_OFFSET = " + to_string (limits.maxVertexInputAttributeOffset);
+//                  myfile << endl << gpu + "_MAX_VERTEX_INPUT_BINDING_STRIDE = " + to_string (limits.maxVertexInputBindingStride);
+//                  myfile << endl << gpu + "_MAX_VERTEX_OUTPUT_COMPONENTS = " + to_string (limits.maxVertexOutputComponents);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_GENERATION_LEVEL = " + to_string (limits.maxTessellationGenerationLevel);
+//                  myfile << endl << gpu + "_MAX_PER_TESSELLATION_PATCH_SIZE = " + to_string (limits.maxTessellationPatchSize);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_PER_VERTEX_INPUT_COMPONENTS = " + to_string (limits.maxTessellationControlPerVertexInputComponents);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_PER_VERTEX_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationControlPerVertexInputComponents);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_PER_PATCH_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationControlPerPatchOutputComponents);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_CONTROL_TOTAL_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationControlTotalOutputComponents);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_EVALUATION_INPUT_COMPONENTS = " + to_string (limits.maxTessellationEvaluationInputComponents);
+//                  myfile << endl << gpu + "_MAX_TESSELLATION_EVALUATION_OUTPUT_COMPONENTS = " + to_string (limits.maxTessellationEvaluationOutputComponents);
+//                  myfile << endl << gpu + "_MAX_GEOMETRY_SHADER_INVOCATIONS = " + to_string (limits.maxGeometryShaderInvocations);
+//                  myfile << endl << gpu + "_MAX_GEOMETRY_INPUT_COMPONENTS = " + to_string (limits.maxGeometryInputComponents);
+//                  myfile << endl << gpu + "_MAX_GEOMETRY_OUTPUT_COMPONENTS = " + to_string (limits.maxGeometryOutputComponents);
+//                  myfile << endl << gpu + "_MAX_GEOMETRY_OUTPUT_VERTICES = " + to_string (limits.maxGeometryOutputVertices);
+//                  myfile << endl << gpu + "_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS = " + to_string (limits.maxGeometryTotalOutputComponents);
+//                  myfile << endl << gpu + "_MAX_FRAGMENT_INPUT_COMPONENTS= " + to_string (limits.maxFragmentInputComponents);
+//                  myfile << endl << gpu + "_MAX_FRAGMENT_OUTPUT_ATTACHMENTS = " + to_string (limits.maxFragmentOutputAttachments);
+//                  myfile << endl << gpu + "_MAX_FRAGMENT_DUAL_SRC_ATTACHMENTS = " + to_string (limits.maxFragmentDualSrcAttachments);
+//                  myfile << endl << gpu + "_MAX_FRAGMENT_COMBINED_OUTPUT_RESOURCES = " + to_string (limits.maxFragmentCombinedOutputResources);
+//                  myfile << endl << gpu + "_MAX_COMPUTE_SHARED_MEMORY_SIZE = " + to_string (limits.maxComputeSharedMemorySize);
+//                  //            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_COUNT = " + to_string (limits.maxComputeWorkGroupCount);
+//                  myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_INVOCATIONS = " + to_string (limits.maxComputeWorkGroupInvocations);
+//                  //            myfile << endl << gpu + "_MAX_COMPUTE_WORK_GROUP_SIZE = " + to_string (limits.maxComputeWorkGroupSize);
+//                  myfile << endl << gpu + "_SUB_PIXEL_PRECISION_BITS = " + to_string (limits.subPixelPrecisionBits);
+//                  myfile << endl << gpu + "_SUB_TEXEL_PRECISION_BITS = " + to_string (limits.subTexelPrecisionBits);
+//                  myfile << endl << gpu + "_MIPMAP_PRECISION_BITS = " + to_string (limits.mipmapPrecisionBits);
+//                  myfile << endl << gpu + "_MAX_DRAW_INDEXED_INDEX_VALUE = " + to_string (limits.maxDrawIndexedIndexValue);
+//                  myfile << endl << gpu + "_MAX_DRAW_INDIRECT_COUNT = " + to_string (limits.maxDrawIndirectCount);
+//                  myfile << endl << gpu + "_MAX_SAMPLER_LOD_BIAS = " + to_string (limits.maxSamplerLodBias);
+//                  myfile << endl << gpu + "_MAX_SAMPLER_ANISOTROPY = " + to_string (limits.maxSamplerAnisotropy);
+//                  myfile << endl << gpu + "_MAX_VIEWPORTS = " + to_string (limits.maxViewports);
             }
             
             
@@ -300,7 +371,6 @@ int main (int argc, const char * argv[])
       
       vkDestroyInstance(instance, nullptr);
       glfwTerminate();
-      myfile.close();
       system("open graphics_info.hpp");
       return 0;
 }

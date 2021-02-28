@@ -10,6 +10,7 @@
 /Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/RUN_TESTS.dir
 /Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/phulkan_library.dir
 /Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/graphics_generator.dir
+/Users/pw/GitHub/phulkan/xbuild/src/CMakeFiles/gpus_info_generator.dir
 /Users/pw/GitHub/phulkan/xbuild/apps/CMakeFiles/RUN_TESTS.dir
 /Users/pw/GitHub/phulkan/xbuild/apps/CMakeFiles/app.dir
 /Users/pw/GitHub/phulkan/xbuild/tests/CMakeFiles/RUN_TESTS.dir

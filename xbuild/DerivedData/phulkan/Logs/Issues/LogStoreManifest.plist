@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0577441F-2478-4091-8A41-55C498812E7C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
-			<key>fileName</key>
-			<string>0577441F-2478-4091-8A41-55C498812E7C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>phulkan_library-blkuyvqfvkpljucacstvhuwlrxfo</string>
-			<key>timeStartedRecording</key>
-			<real>636157622.81958497</real>
-			<key>timeStoppedRecording</key>
-			<real>636157623.28477001</real>
-			<key>title</key>
-			<string>Build target phulkan_library</string>
-			<key>uniqueIdentifier</key>
-			<string>0577441F-2478-4091-8A41-55C498812E7C</string>
-		</dict>
-		<key>17F6F5C7-2559-4EF8-8959-C69507F2F9BD</key>
+		<key>B71980F5-07AA-4443-B911-AD7D745E1661</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,54 +15,26 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>17F6F5C7-2559-4EF8-8959-C69507F2F9BD.xcactivitylog</string>
+			<string>B71980F5-07AA-4443-B911-AD7D745E1661.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>signature</key>
 			<string>graphics_generator-blkuyvqfvkpljucacstvhuwlrxfo</string>
 			<key>timeStartedRecording</key>
-			<real>636206107.57137704</real>
+			<real>636219277.313308</real>
 			<key>timeStoppedRecording</key>
-			<real>636206109.57027996</real>
+			<real>636219278.45172</real>
 			<key>title</key>
 			<string>Build target graphics_generator</string>
 			<key>uniqueIdentifier</key>
-			<string>17F6F5C7-2559-4EF8-8959-C69507F2F9BD</string>
+			<string>B71980F5-07AA-4443-B911-AD7D745E1661</string>
 		</dict>
-		<key>697DD488-31F7-43E0-897F-53DC8EB2F991</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
-			<key>fileName</key>
-			<string>697DD488-31F7-43E0-897F-53DC8EB2F991.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>testlib-blkuyvqfvkpljucacstvhuwlrxfo</string>
-			<key>timeStartedRecording</key>
-			<real>636157623.28496802</real>
-			<key>timeStoppedRecording</key>
-			<real>636157633.61823106</real>
-			<key>title</key>
-			<string>Build target testlib</string>
-			<key>uniqueIdentifier</key>
-			<string>697DD488-31F7-43E0-897F-53DC8EB2F991</string>
-		</dict>
-		<key>C1CECB3D-1728-4590-BEA5-8FA8AD3094D1</key>
+		<key>F763D3C4-F32F-4A00-83DD-7D035EFFB332</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -99,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
 			<key>fileName</key>
-			<string>C1CECB3D-1728-4590-BEA5-8FA8AD3094D1.xcactivitylog</string>
+			<string>F763D3C4-F32F-4A00-83DD-7D035EFFB332.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -110,13 +54,13 @@
 			<key>signature</key>
 			<string>ZERO_CHECK-blkuyvqfvkpljucacstvhuwlrxfo</string>
 			<key>timeStartedRecording</key>
-			<real>636206107.49800897</real>
+			<real>636219277.24997497</real>
 			<key>timeStoppedRecording</key>
-			<real>636206107.57072902</real>
+			<real>636219277.31092095</real>
 			<key>title</key>
 			<string>Build target ZERO_CHECK</string>
 			<key>uniqueIdentifier</key>
-			<string>C1CECB3D-1728-4590-BEA5-8FA8AD3094D1</string>
+			<string>F763D3C4-F32F-4A00-83DD-7D035EFFB332</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

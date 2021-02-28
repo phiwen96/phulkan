@@ -12,7 +12,7 @@ file(GLOB SOURCE_LIST ./*.cpp)
 include (generators/CMakeLists.txt)
 
 
-
+message (${CMAKE_CURRENT_BINARY_DIR})
 
 # Make an automatic library - will be static or dynamic based on user setting
 add_library (phulkan_library ${SOURCE_LIST} ${HEADER_LIST} ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
@@ -46,7 +46,7 @@ source_group (
 	FILES ${HEADER_LIST})
 
 	
-message ($<TARGET_FILE:phulkan_library>)
+# message ($<TARGET_FILE:phulkan_library>)
 
 
 write_compiler_detection_header (
