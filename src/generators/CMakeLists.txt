@@ -29,7 +29,9 @@ target_include_directories(gpus_info_generator PUBLIC
 
 
 
-add_executable (graphics_generator ${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics.cpp ${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics.hpp
+add_executable (graphics_generator 
+	${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics.cpp 
+	${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics.hpp
 	${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics_template.hpp
 	# ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
 )
@@ -40,15 +42,18 @@ add_custom_command (
 	TARGET graphics_generator
 	# OUTPUT gpus_info.hpp 
 	PRE_BUILD
-	COMMAND gpus_info_generator #${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
+	COMMAND gpus_info_generator #snopp.txt#gpus_info.hpp
+	# WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
 	# ARGS ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
 	# "${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp"
 	)
 # target_sources(graphics_generator PRIVATE )
 # message("$<TARGET_FILE_DIR:graphics_generator>")
 
-# add_custom_target (testing 
-# 	COMMAND "${CMAKE_COMMAND}" -E touch $<TARGET_FILE_DIR)
+# add_custom_command(testing
+# 	PRE_BUILD 
+# 	COMMAND open .
+# )
 
 target_link_libraries(graphics_generator
 	PUBLIC 

@@ -93,6 +93,9 @@ if (int b = s.find ("${"); b != string::npos)\
 #define PROCESS(file, str) PROCESS2 (BOOST_PP_STRINGIZE (str)); file << BOOST_PP_STRINGIZE (str)
 #define NN(x) {if (x == 0) 0}
 #include "gpus_info.hpp"
+#include "kuk.txt"
+#include "fitta.txt"
+#include "snopp.txt"
 int main (int argc, const char * argv[])
 {
       cout << number_of_gpus << endl;
