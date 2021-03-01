@@ -96,8 +96,11 @@ if (int b = s.find ("${"); b != string::npos)\
 #include "kuk.txt"
 #include "fitta.txt"
 #include "snopp.txt"
+#include "snor.hpp"
+#include "bajs.hpp"
 int main (int argc, const char * argv[])
 {
+      
       cout << number_of_gpus << endl;
       cout << (string("~") == string(")")) << endl;
       int j = 10;
