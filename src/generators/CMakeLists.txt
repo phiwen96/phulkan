@@ -1,13 +1,10 @@
-
-
-
-
-add_executable (gpus_info_generator ${CMAKE_CURRENT_SOURCE_DIR}/generators/number_of_gpus.cpp ${CMAKE_CURRENT_SOURCE_DIR}/generators/number_of_gpus.hpp
+add_executable (gpus_info_generator 
+	${CMAKE_CURRENT_SOURCE_DIR}/generators/number_of_gpus.cpp 
+	${CMAKE_CURRENT_SOURCE_DIR}/generators/number_of_gpus.hpp
 )
 
 target_link_libraries(gpus_info_generator
 	PUBLIC 
-	# /Users/pw/vulkansdk/macOS/lib/libvulkan.1.2.162.dylib 
 	/Users/pw/vulkansdk/MoltenVK/dylib/macOS/libMoltenVK.dylib 
 	/Users/pw/vulkansdk/macOS/lib/libVkLayer_khronos_validation.dylib
 	/Users/pw/vulkansdk/macOS/lib/libvulkan.1.2.162.dylib
@@ -21,25 +18,37 @@ target_include_directories(gpus_info_generator PUBLIC
 	/usr/local/Cellar/boost/1.75.0_1/include
 )
 
-add_custom_command (
-	OUTPUT gpus_info.hpp 
-	COMMAND gpus_info_generator)
+# add_custom_command (
+# 	OUTPUT gpus_info.hpp 
+# 	PRE_BUILD
+# 	COMMAND gpus_info_generator 
+# 	# "${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp"
+# 	)
 
 # target_compile_definitions (graphics_number_of_gpus_generator PUBLIC TEMPLATE_FILE="${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics_template.hpp")
 
-message(${CMAKE_CURRENT_BINARY_DIR})
 
-
-# target_link_libraries(graphics_generator
-# PRIVATE 
-# ${Vulkan_LIBRARIES}
-#   glfw
-# )
 
 add_executable (graphics_generator ${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics.cpp ${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics.hpp
 	${CMAKE_CURRENT_SOURCE_DIR}/generators/graphics_template.hpp
-	${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
+	# ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
 )
+
+
+
+add_custom_command (
+	TARGET graphics_generator
+	# OUTPUT gpus_info.hpp 
+	PRE_BUILD
+	COMMAND gpus_info_generator #${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
+	# ARGS ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
+	# "${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp"
+	)
+# target_sources(graphics_generator PRIVATE )
+# message("$<TARGET_FILE_DIR:graphics_generator>")
+
+# add_custom_target (testing 
+# 	COMMAND "${CMAKE_COMMAND}" -E touch $<TARGET_FILE_DIR)
 
 target_link_libraries(graphics_generator
 	PUBLIC 
