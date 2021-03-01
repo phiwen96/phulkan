@@ -42,7 +42,7 @@ add_custom_command (
 	TARGET graphics_generator
 	# OUTPUT gpus_info.hpp 
 	PRE_BUILD
-	COMMAND gpus_info_generator #snopp.txt#gpus_info.hpp
+	COMMAND gpus_info_generator snopp.txt#gpus_info.hpp
 	# WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
 	# ARGS ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
 	# "${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp"

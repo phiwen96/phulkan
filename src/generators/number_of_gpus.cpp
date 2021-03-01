@@ -9,7 +9,7 @@ int main (int argc, const char * argv[])
 //      string s = "open ";
 //      s += string (argv[0]);
 //      system(s.c_str());
-      file <write> f4 (argv [0]);
+      file <write> f4 (argv [1]);
       file <write> f3 ("fitta.txt");
       file <write> f2 ("kuk.txt");
       file <write> f ("gpus_info.hpp");
