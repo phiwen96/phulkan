@@ -102,66 +102,81 @@ if (int b = s.find ("${"); b != string::npos)\
 
 #define TEST 4
 
-void process_text (string s)
-{
-      
-}
 
-#define PROCESS_TEXT(x) process_text (BOOST_PP_STRINGIZE (x));
+string process_text (string s, int max)
+{
+      vector <string> strings (max);
+      fill (strings.begin(), strings.end(), s);
+      
+      auto a1 = strings[0].find("${");
+      
+      while (a1 != string::npos)
+      {
+            if (int a2 = strings[0].find ("}"); a2 != string::npos)
+            {
+//                  cout << string (strings[0].begin() + a1 + 2, strings[0].begin() + a2) << endl;
+                  for (int i = 0; i < max; ++i)
+                  {
+//                        string found = string (strings[0].begin() + a1 + 2, strings[0].begin() + a2);
+//                        if (found == "i")
+//                        cout << string (strings[i].begin() + a1, strings[i].begin() + a2 + 1) << endl;
+                              strings[i].replace (strings[i].begin() + a1, strings[i].begin() + a2 + 1, to_string (i));
+                  }
+            }
+            a1 = strings[0].find ("${");
+      }
+      
+      string res;
+      
+      for (auto const& i : strings)
+            res += i;
+      
+      
+      
+      return res;
+}
+#define PROCESS_TEXT2(x, ...) process_text (BOOST_PP_STRINGIZE (x));cout<<"size:" << BOOST_PP_VARIADIC_SIZE (__VA_ARGS__) << endl;// cout << "max: " << max << endl;
+#define PROCESS_TEXT(x)  BOOST_PP_SEQ_ELEM (2, x) = process_text (BOOST_PP_STRINGIZE (BOOST_PP_SEQ_ELEM (0, x)), BOOST_PP_SEQ_ELEM (1, x));
 
 int main (int argc, const char * argv[])
 {
+      
+      
+      
+      PROCESS_TEXT(
+                   (int i${i} = ${i})
+                   (3)
+                   (string res)
+                   )
+//      return 0;
+      PROCESS_TEXT ((template <>
+                     struct ggpu <${i}> \n
+                     {\n
+                        int a = ${i};\n
+                        int b = ${i};\n
+                     };\n\n)
+                    (3)
+                    (string res2)
+                    )
+      cout << res2 << endl;
+      return 0;
+      
       BOOST_PP_REPEAT(TEST, DECL, int dsa)
-      
-      
-      
-      
       cout << GPU_COUNT << endl;
       cout << (string("~") == string(")")) << endl;
       int j = 10;
-//      cout << NR (j) << endl;
-//      string s = "kuk${i}fitta";
-      
-      
-      
-      
-      
-      
       PROCESS3 (int k kuk ${j} fitta);
-//      cout << s << endl;
-//      s.replace (s.begin () + 3, s.begin () + 4, "+-");
-//      cout << s << endl;
-//      s.replace (s.begin () + 3, s.begin () + 5, "$");
-//      cout << s << endl;
+      string s = "4+-5";
+      cout << s << endl;
+      s.replace (s.begin () + 3, s.begin () + 4, "+-");
+      cout << s << endl;
+      s.replace (s.begin () + 3, s.begin () + 5, "$");
+      cout << s << endl;
 //      process(s);
       
       int i = 3;
       file <write> myfile ("graphics_info.hpp");
-
-      PROCESS(myfile, $i);
-      
-      
-      
-     
-
-      
-      
-//      JAA (1, 2, 3);
-      YEAH2 (1, 2, 3);
-     
-      
-      
-      cout << i1 << endl;
-      
-      cout << filesystem::current_path().c_str() << endl;
-      
-
-      
       string template_string = readFileIntoString (TEMPLATE_FILE);
-//      cout << template_string << endl;
-      
-      
-      
       glfwInit();
       auto instanceExtensions = []{
             uint32_t extensionCount = 0;
@@ -218,18 +233,8 @@ int main (int argc, const char * argv[])
             vkEnumeratePhysicalDevices(instance, &deviceCount, devices.data());
             return devices;
       }();
+
       
-      PROCESS_TEXT (
-                    
-                    
-                    template <>
-                    struct gpu <${max} = GPU_COUNT>
-                    {
-            
-                    };
-                    
-                    
-      )
       
       return 0;
       

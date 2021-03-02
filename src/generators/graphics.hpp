@@ -3,17 +3,11 @@
 
 #define EXPAND(...) __VA_ARGS__
 #define EAT(...)
-#define DEFER(x) x EMPTY ()
 #define OBSTRUCT(...) __VA_ARGS__ DEFER(EMPTY)()
 
 #define PAT(...) BOOST_PP_SEQ_CAT (BOOST_PP_VARIADIC_TO_SEQ (__VA_ARGS__))
 
-#define EVAL(...)  EVAL1(EVAL1(EVAL1(__VA_ARGS__)))
-#define EVAL1(...) EVAL2(EVAL2(EVAL2(__VA_ARGS__)))
-#define EVAL2(...) EVAL3(EVAL3(EVAL3(__VA_ARGS__)))
-#define EVAL3(...) EVAL4(EVAL4(EVAL4(__VA_ARGS__)))
-#define EVAL4(...) EVAL5(EVAL5(EVAL5(__VA_ARGS__)))
-#define EVAL5(...) __VA_ARGS__
+
 
 #define KISS(filename) system (BOOST_PP_CAT)
 
@@ -21,6 +15,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <array>
 //#include <vulkan/vulkan.h>
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
@@ -35,6 +30,7 @@
 #include <boost/preprocessor/control/if.hpp>
 #include <boost/preprocessor/facilities/empty.hpp>
 #include <boost/preprocessor/facilities/identity.hpp>
+#include <boost/preprocessor/seq/to_tuple.hpp>
 
 using namespace std;
 
@@ -85,3 +81,26 @@ consteval void a (int& i) {
 //#define IIF_4(t1, t2, t3, t4, ...) t4
 //#define IIF_5(t1, t2, t3, t4, t5, ...) t5
 //#define IIF_6(t1, t2, t3, t4, t5, t6, ...) t6
+
+
+#define EMPTY()
+
+#define DEFER(...) __VA_ARGS__ EMPTY()
+// To defer it twice we simply add in another defered EMPTY() call
+#define DEFER2(...) __VA_ARGS__ DEFER(EMPTY) ()
+#define DEFER3(...) __VA_ARGS__ DEFER2(EMPTY) ()
+#define DEFER4(...) __VA_ARGS__ DEFER3(EMPTY) ()
+#define DEFER5(...) __VA_ARGS__ DEFER4(EMPTY) ()
+
+#define EVAL_1(...) __VA_ARGS__
+// Note how we call EVAL of the lower level twice
+// This allows us to double the number of EVAL calls per level
+#define EVAL_2(...) EVAL_1(EVAL_1(__VA_ARGS__))
+#define EVAL_3(...) EVAL_2(EVAL_2(__VA_ARGS__))
+#define EVAL_4(...) EVAL_3(EVAL_3(__VA_ARGS__))
+#define EVAL_5(...) EVAL_4(EVAL_4(__VA_ARGS__))
+#define EVAL_6(...) EVAL_5(EVAL_5(__VA_ARGS__))
+#define EVAL_7(...) EVAL_6(EVAL_6(__VA_ARGS__))
+#define EVAL_8(...) EVAL_7(EVAL_7(__VA_ARGS__))
+// Finally our EVAL calls the top level EVAL call
+#define EVAL(...) EVAL_8(__VA_ARGS__)
