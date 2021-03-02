@@ -114,12 +114,10 @@ string process_text (string s, int max)
       {
             if (int a2 = strings[0].find ("}"); a2 != string::npos)
             {
-//                  cout << string (strings[0].begin() + a1 + 2, strings[0].begin() + a2) << endl;
                   for (int i = 0; i < max; ++i)
                   {
-//                        string found = string (strings[0].begin() + a1 + 2, strings[0].begin() + a2);
-//                        if (found == "i")
-//                        cout << string (strings[i].begin() + a1, strings[i].begin() + a2 + 1) << endl;
+//                        cout << string (strings[i].begin() + a1 + 2, strings[i].begin() + a2) << endl;
+                        
                               strings[i].replace (strings[i].begin() + a1, strings[i].begin() + a2 + 1, to_string (i));
                   }
             }
@@ -141,41 +139,43 @@ string process_text (string s, int max)
 int main (int argc, const char * argv[])
 {
       
+      PROCESS_TEXT
+      ((
+        
+        template <>
+        struct gpu <${i}>
+        {
+            static constexpr int count = GPU_COUNT;
+            constexpr uint32_t max_image_dimension_1D = GPU_${i}_MAX_IMAGE_DIMENSION_1D;
+      };
+        
+        )(GPU_COUNT)
+       (string rr))
       
       
-      PROCESS_TEXT(
-                   (int i${i} = ${i})
-                   (3)
-                   (string res)
-                   )
-//      return 0;
-      PROCESS_TEXT ((template <>
-                     struct ggpu <${i}> \n
-                     {\n
-                        int a = ${i};\n
-                        int b = ${i};\n
-                     };\n\n)
-                    (3)
-                    (string res2)
-                    )
-      cout << res2 << endl;
-      return 0;
       
-      BOOST_PP_REPEAT(TEST, DECL, int dsa)
-      cout << GPU_COUNT << endl;
-      cout << (string("~") == string(")")) << endl;
-      int j = 10;
-      PROCESS3 (int k kuk ${j} fitta);
-      string s = "4+-5";
-      cout << s << endl;
-      s.replace (s.begin () + 3, s.begin () + 4, "+-");
-      cout << s << endl;
-      s.replace (s.begin () + 3, s.begin () + 5, "$");
-      cout << s << endl;
-//      process(s);
+      []{
+            PROCESS_TEXT(
+                         (int i${i} = ${i})
+                         (3)
+                         (string res)
+                         )
+            //      return 0;
+            PROCESS_TEXT ((template <>
+                           struct ggpu <${i}>
+                           {
+                  int a = ${i};
+                  int b = ${i};
+            };)
+                          (3)
+                          (string res2)
+                          )
+            cout << res2 << endl;
+      };
       
-      int i = 3;
-      file <write> myfile ("graphics_info.hpp");
+      
+   
+//      file <write> myfile ("graphics_info.hpp");
       string template_string = readFileIntoString (TEMPLATE_FILE);
       glfwInit();
       auto instanceExtensions = []{
@@ -233,10 +233,8 @@ int main (int argc, const char * argv[])
             vkEnumeratePhysicalDevices(instance, &deviceCount, devices.data());
             return devices;
       }();
-
       
-      
-      return 0;
+ 
       
       
       auto getPhysicalDeviceProperties = [](VkPhysicalDevice const& physicalDevice) {
@@ -271,7 +269,25 @@ int main (int argc, const char * argv[])
             auto feats = getPhysicalDeviceFeatures (i);
             VkPhysicalDeviceLimits limits = props.limits;
             auto _int = to_string (nr_of_gpus);
-
+            
+#define MAX_IMAGE_DIMENSION_1D(limits) 1//to_string (limits.maxImageDimension1D)
+            
+            PROCESS_TEXT
+            ((
+              
+                          template <>
+                          struct gpu <${i}>
+                          {
+                              static constexpr int count = GPU_COUNT;
+                              constexpr uint32_t max_image_dimension_1D = GPU_${i}_MAX_IMAGE_DIMENSION_1D;
+                          };
+                          
+            )(GPU_COUNT)
+             (string rr))
+            
+            
+            cout << rr << endl;
+//            myfile << rr;
             string kiss = "hej";
             
             
@@ -413,7 +429,7 @@ int main (int argc, const char * argv[])
       
       vkDestroyInstance(instance, nullptr);
       glfwTerminate();
-      system("open graphics_info.hpp");
+//      system("open graphics_info.hpp");
       return 0;
 }
 

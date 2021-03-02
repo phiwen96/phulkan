@@ -96,6 +96,7 @@ int main (int argc, const char * argv[])
             auto feats = getPhysicalDeviceFeatures (i);
             VkPhysicalDeviceLimits limits = props.limits;
             auto _int = to_string (nr_of_gpus);
+            f << "#define GPU_" << to_string (nr_of_gpus) << "_MAX_IMAGE_DIMENSION_1D " << to_string (limits.maxImageDimension1D) << "\n";
             ++nr_of_gpus;
       }
       
