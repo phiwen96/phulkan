@@ -40,14 +40,11 @@ add_executable (graphics_generator
 
 add_custom_command (
 	TARGET graphics_generator
-	# OUTPUT gpus_info.hpp 
 	PRE_BUILD
-	COMMAND $<TARGET_FILE:gpus_info_generator> ${CMAKE_CURRENT_BINARY_DIR}/bajs.hpp#gpus_info.hpp
-	# WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
-	# ARGS ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
-	# "${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp"
-	)
-# target_sources(graphics_generator PRIVATE )
+	COMMAND $<TARGET_FILE:gpus_info_generator> ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
+
+target_sources(graphics_generator PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
+
 # message("$<TARGET_FILE_DIR:graphics_generator>")
 
 # add_custom_command(testing

@@ -87,44 +87,59 @@ if (int b = s.find ("${"); b != string::npos)\
       }\
 }}
 #define PROCESS3(x) PROCESS4 (BOOST_PP_STRINGIZE (x), x);
-
+#define PROCESS5(x, y) PROCESS4 (BOOST_PP_STRINGIZE (x), x);
 
 #define PROCESS2(x) if (x[0] == '$') cout << "fitta" << endl;
 #define PROCESS(file, str) PROCESS2 (BOOST_PP_STRINGIZE (str)); file << BOOST_PP_STRINGIZE (str)
 #define NN(x) {if (x == 0) 0}
 #include "gpus_info.hpp"
-#include "kuk.txt"
-#include "fitta.txt"
-#include "snopp.txt"
-#include "snor.hpp"
-#include "bajs.hpp"
-int main (int argc, const char * argv[])
+
+#define BAJS2(_, data, element)
+
+#define BAJS BOOST_PP_SEQ_FOR_EACH(BAJS2, int i, seq)
+
+#define DECL(z, n, text) text ## n = n;
+
+#define TEST 4
+
+void process_text (string s)
 {
       
-      cout << number_of_gpus << endl;
+}
+
+#define PROCESS_TEXT(x) process_text (BOOST_PP_STRINGIZE (x));
+
+int main (int argc, const char * argv[])
+{
+      BOOST_PP_REPEAT(TEST, DECL, int dsa)
+      
+      
+      
+      
+      cout << GPU_COUNT << endl;
       cout << (string("~") == string(")")) << endl;
       int j = 10;
 //      cout << NR (j) << endl;
 //      string s = "kuk${i}fitta";
       
-      cout << BOOST_PP_EXPAND(STR_BEGIN (template <>  NN (kiss)
-                         struct gpu<
-                         )) << endl;
+      
+      
+      
+      
+      
       PROCESS3 (int k kuk ${j} fitta);
-      return 0;
 //      cout << s << endl;
 //      s.replace (s.begin () + 3, s.begin () + 4, "+-");
 //      cout << s << endl;
 //      s.replace (s.begin () + 3, s.begin () + 5, "$");
 //      cout << s << endl;
 //      process(s);
-      return 0;
       
       int i = 3;
       file <write> myfile ("graphics_info.hpp");
 
       PROCESS(myfile, $i);
-      return 0;
+      
       
       
      
@@ -203,6 +218,22 @@ int main (int argc, const char * argv[])
             vkEnumeratePhysicalDevices(instance, &deviceCount, devices.data());
             return devices;
       }();
+      
+      PROCESS_TEXT (
+                    
+                    
+                    template <>
+                    struct gpu <${max} = GPU_COUNT>
+                    {
+            
+                    };
+                    
+                    
+      )
+      
+      return 0;
+      
+      
       auto getPhysicalDeviceProperties = [](VkPhysicalDevice const& physicalDevice) {
             VkPhysicalDeviceProperties properties;
             vkGetPhysicalDeviceProperties(physicalDevice, &properties);
