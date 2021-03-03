@@ -31,6 +31,11 @@
 #include <boost/preprocessor/facilities/empty.hpp>
 #include <boost/preprocessor/facilities/identity.hpp>
 #include <boost/preprocessor/seq/to_tuple.hpp>
+#include <boost/preprocessor/seq/for_each_i.hpp>
+#include <boost/preprocessor/arithmetic/inc.hpp>
+#include <boost/preprocessor/comparison/not_equal.hpp>
+#include <boost/preprocessor/repetition/for.hpp>
+#include <boost/preprocessor/tuple/elem.hpp>
 
 using namespace std;
 

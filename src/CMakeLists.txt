@@ -14,7 +14,17 @@ include (generators/CMakeLists.txt)
 
 
 # Make an automatic library - will be static or dynamic based on user setting
-add_library (phulkan_library ${SOURCE_LIST} ${HEADER_LIST} ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
+add_library (phulkan_library 
+${SOURCE_LIST} ${HEADER_LIST} 
+# ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp
+)
+
+add_custom_command (
+	TARGET phulkan_library
+	PRE_BUILD
+	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
+
+target_sources(phulkan_library PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
 
 target_compile_definitions (phulkan_library PUBLIC kuk=3)
 

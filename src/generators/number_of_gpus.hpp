@@ -32,7 +32,7 @@ struct file <write>
       using self = file<write>;
       
       
-      file (char const* n)
+      file (string const& n)
       {
             m_file.open (n);
       }

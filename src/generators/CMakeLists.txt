@@ -36,6 +36,8 @@ add_executable (graphics_generator
 	# ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
 )
 
+target_compile_definitions (graphics_generator PUBLIC GENERATED_INCLUDE_FILE="${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp")
+
 
 
 add_custom_command (

@@ -1,6 +1,7 @@
 #include "graphics.hpp"
 #include <ostream>
 #include <type_traits>
+#include "gpus_info.hpp"
 
 string readFileIntoString(const string& path) {
       ifstream input_file(path);
@@ -92,7 +93,7 @@ if (int b = s.find ("${"); b != string::npos)\
 #define PROCESS2(x) if (x[0] == '$') cout << "fitta" << endl;
 #define PROCESS(file, str) PROCESS2 (BOOST_PP_STRINGIZE (str)); file << BOOST_PP_STRINGIZE (str)
 #define NN(x) {if (x == 0) 0}
-#include "gpus_info.hpp"
+
 
 #define BAJS2(_, data, element)
 
@@ -136,22 +137,128 @@ string process_text (string s, int max)
 #define PROCESS_TEXT2(x, ...) process_text (BOOST_PP_STRINGIZE (x));cout<<"size:" << BOOST_PP_VARIADIC_SIZE (__VA_ARGS__) << endl;// cout << "max: " << max << endl;
 #define PROCESS_TEXT(x)  BOOST_PP_SEQ_ELEM (2, x) = process_text (BOOST_PP_STRINGIZE (BOOST_PP_SEQ_ELEM (0, x)), BOOST_PP_SEQ_ELEM (1, x));
 
+
+
+#define PROCC2(str, max, var) var = []()->string\
+{\
+vector <string> strings (max);\
+\
+fill (strings.begin(), strings.end(), str);\
+\
+auto a1 = strings[0].find("${");\
+\
+while (a1 != string::npos)\
+{\
+      if (int a2 = strings[0].find ("}"); a2 != string::npos)\
+      {\
+            for (int i = 0; i < max; ++i)\
+            {\
+               \
+                  strings[i].replace (strings[i].begin() + a1, strings[i].begin() + a2 + 1, to_string (i));\
+            }\
+      }\
+      a1 = strings[0].find ("${");\
+}\
+\
+string res;\
+\
+for (auto const& i : strings)\
+res += i;\
+      return res;\
+}();// = [&s]->string{return "";}();
+
+#define PROCC(x) PROCC2 (BOOST_PP_STRINGIZE (BOOST_PP_SEQ_ELEM (0, x)), BOOST_PP_SEQ_ELEM (1, x), BOOST_PP_SEQ_ELEM (2, x))//BOOST_PP_SEQ_ELEM (2, x) = [](string s){ \
+; \
+}(string (BOOST_PP_STRINGIZE (BOOST_PP_SEQ_ELEM (1, x))));
+
+//#define MACRO(z, n, text) cout << BOOST_PP_STRINGIZE (BOOST_PP_CAT (text, n)) << endl;
+//#define MACRO(r, data, elem) BOOST_PP_CAT (data, BOOST_PP_CAT(elem, _MAX_IMAGE_DIMENSION_1D))
+#define MACRO(r, data, i, elem) cout << BOOST_PP_STRINGIZE (BOOST_PP_CAT (data, BOOST_PP_CAT(BOOST_PP_SEQ_ELEM (0, elem), BOOST_PP_CAT (i, BOOST_PP_SEQ_ELEM (1, elem))))) << endl;
+
+
+#define MACRO2(r, data, i, elem) cout << BOOST_PP_STRINGIZE (BOOST_PP_CAT(BOOST_PP_SEQ_ELEM (0, elem), BOOST_PP_CAT (data, BOOST_PP_SEQ_ELEM (1, elem)))) << endl;
+
+
+#define IN_BETWEEN_LOOP_H1(r, data, i, elem)    BOOST_PP_CAT (data, BOOST_PP_CAT(BOOST_PP_SEQ_ELEM (0, elem), BOOST_PP_CAT (i, BOOST_PP_SEQ_ELEM (1, elem))))
+#define IN_BETWEEN_LOOP(x)       BOOST_PP_SEQ_FOR_EACH_I (IN_BETWEEN_LOOP_H1, BOOST_PP_EMPTY(), x) // expands to a_0 b_1 c_2 d_3
+
+int yes (...) {
+      return 0;
+}
+
+#define PRED(r, state) \
+BOOST_PP_NOT_EQUAL ( \
+BOOST_PP_TUPLE_ELEM (3, 0, state), \
+BOOST_PP_INC (BOOST_PP_TUPLE_ELEM (3, 1, state)) \
+) \
+/**/
+
+#define OP(r, state) \
+( \
+BOOST_PP_INC (BOOST_PP_TUPLE_ELEM (3, 0, state)), \
+BOOST_PP_TUPLE_ELEM (3, 1, state), \
+BOOST_PP_TUPLE_ELEM (3, 2, state) \
+) \
+/**/
+
+#define MACRO4(r, state) state//BOOST_PP_TUPLE_ELEM (2, 0, state)
+
+//#define IN_BETWEEN_LOOP2(x)
+
+
+
+#define PRO3(r, state)
+
+#define PRO2(code, count, var)
+namespace jj{}
+#define PRO(x) PRO2 (BOOST_PP_STRINGIZE (BOOST_PP_SEQ_ELEM (0, x)), BOOST_PP_SEQ_ELEM (1, x), BOOST_PP_SEQ_ELEM (2, x))
+#define W(...) __VA_ARGS__
 int main (int argc, const char * argv[])
 {
+//      string input = readFileIntoString (argv [1]);
+//      cout << input << endl;
       
-      PROCESS_TEXT
-      ((
-        
-        template <>
-        struct gpu <${i}>
-        {
-            static constexpr int count = GPU_COUNT;
-            constexpr uint32_t max_image_dimension_1D = GPU_${i}_MAX_IMAGE_DIMENSION_1D;
-      };
-        
-        )(GPU_COUNT)
-       (string rr))
+   
       
+
+      PROCC((
+             template <>
+             struct gpu <${i}>
+             {
+                  static constexpr int count = GPU_COUNT;
+                  static constexpr uint32_t max_image_dimension_1D = GPU_${i}_MAX_IMAGE_DIMENSION_1D;
+             };
+             
+             )(1)
+            (string rr))
+      
+      cout << rr << endl;
+      file <write> f (argv [1]);
+      f << "#pragma once \n";
+      f << "namespace{\n";
+      f << readFileIntoString (GENERATED_INCLUDE_FILE);
+      f << "}\n";
+      f << "template <int>struct gpu;";
+      f << rr;
+      
+      
+      cout << BOOST_PP_STRINGIZE(BOOST_PP_FOR((5, 10, kiss), PRED, OP, MACRO4)) << endl; // expands to 5 6 7 8 9 10)
+      return 0;
+      
+      cout << BOOST_PP_STRINGIZE (IN_BETWEEN_LOOP(((int i = GPU_)(_MAX_IMAGE_DIMENSION_1D))
+                                                  ((int i = GPU_)(_MAX_IMAGE_DIMENSION_1D)))) << endl;
+      
+      
+      BOOST_PP_SEQ_FOR_EACH_I(MACRO, BOOST_PP_EMPTY(), ((int i = GPU_)(_MAX_IMAGE_DIMENSION_1D))((int i = GPU_)(_MAX_IMAGE_DIMENSION_1D))) // expands to a_0 b_1 c_2 d_3
+      cout << endl;
+      
+      
+      BOOST_PP_SEQ_FOR_EACH_I(MACRO2, 0, ((int a = GPU_)(_MAX_IMAGE_DIMENSION_1D))((int b = GPU_)(_MAX_IMAGE_DIMENSION_1D))) // expands to a_0 b_1 c_2 d_3
+      
+      
+      
+      
+      return 0;
       
       
       []{
@@ -174,8 +281,8 @@ int main (int argc, const char * argv[])
       };
       
       
-   
-//      file <write> myfile ("graphics_info.hpp");
+      
+      file <write> myfile (argv[1]);
       string template_string = readFileIntoString (TEMPLATE_FILE);
       glfwInit();
       auto instanceExtensions = []{

@@ -4,10 +4,15 @@
 
 int main (int argc, const char * argv[])
 {
-      file <write> f (argv [1]);
-//      file <write> f ("test.hpp");
-//      f << "hej";
+      string const output_file_path = argv [1];
       
+      file <write> output_file (output_file_path);
+      string upp = output_file_path;
+      for (auto& i : upp)
+            i = toupper(i);
+
+      
+//      output_file << "#define SELF \"" << argv[1] << "\"\n";
       
       
       glfwInit();
@@ -66,7 +71,7 @@ int main (int argc, const char * argv[])
             vkEnumeratePhysicalDevices(instance, &deviceCount, devices.data());
             return devices;
       }();
-      f << "#define GPU_COUNT " << physicalDevices.size() << "\n";
+      output_file << "constexpr int GPU_COUNT = " << physicalDevices.size() << ";\n";
       auto getPhysicalDeviceProperties = [](VkPhysicalDevice const& physicalDevice) {
             VkPhysicalDeviceProperties properties;
             vkGetPhysicalDeviceProperties(physicalDevice, &properties);
@@ -96,7 +101,7 @@ int main (int argc, const char * argv[])
             auto feats = getPhysicalDeviceFeatures (i);
             VkPhysicalDeviceLimits limits = props.limits;
             auto _int = to_string (nr_of_gpus);
-            f << "#define GPU_" << to_string (nr_of_gpus) << "_MAX_IMAGE_DIMENSION_1D " << to_string (limits.maxImageDimension1D) << "\n";
+            output_file << "constexpr uint32_t GPU_" << nr_of_gpus << "_MAX_IMAGE_DIMENSION_1D = " <<  limits.maxImageDimension1D << ";\n";
             ++nr_of_gpus;
       }
       
