@@ -109,3 +109,85 @@ consteval void a (int& i) {
 #define EVAL_8(...) EVAL_7(EVAL_7(__VA_ARGS__))
 // Finally our EVAL calls the top level EVAL call
 #define EVAL(...) EVAL_8(__VA_ARGS__)
+
+
+
+struct write;
+
+template <class>
+struct file;
+
+template <class T, class U>
+concept convertible = is_convertible_v<T, U> and is_convertible_v<U, T>;
+
+template <>
+struct file <write>
+{
+      ofstream m_file;
+      using self = file<write>;
+      
+      
+      file (string const& n)
+      {
+            m_file.open (n);
+      }
+      
+      template <class T>
+      auto operator<< (T&& v) -> decltype (auto)
+      {
+            m_file << forward<T>(v);
+            return *this;
+      }
+      
+      ~file ()
+      {
+            m_file.close ();
+      }
+};
+
+#include <ostream>
+#include <type_traits>
+#include "generated/gpus_info.hpp"
+
+string readFileIntoString(const string& path) {
+      ifstream input_file(path);
+      if (!input_file.is_open()) {
+            cerr << "Could not open the file - '"
+            << path << "'" << endl;
+            exit(EXIT_FAILURE);
+      }
+      return string((std::istreambuf_iterator<char>(input_file)), std::istreambuf_iterator<char>());
+}
+
+
+
+string process_text (string s, int max)
+{
+      vector <string> strings (max);
+      fill (strings.begin(), strings.end(), s);
+      
+      auto a1 = strings[0].find("${");
+      
+      while (a1 != string::npos)
+      {
+            if (int a2 = strings[0].find ("}"); a2 != string::npos)
+            {
+                  for (int i = 0; i < max; ++i)
+                  {
+                        //                        cout << string (strings[i].begin() + a1 + 2, strings[i].begin() + a2) << endl;
+                        
+                        strings[i].replace (strings[i].begin() + a1, strings[i].begin() + a2 + 1, to_string (i));
+                  }
+            }
+            a1 = strings[0].find ("${");
+      }
+      
+      string res;
+      
+      for (auto const& i : strings)
+            res += i;
+      
+      
+      
+      return res;
+}

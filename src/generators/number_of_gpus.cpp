@@ -7,6 +7,7 @@ int main (int argc, const char * argv[])
       string const output_file_path = argv [1];
       
       file <write> output_file (output_file_path);
+      output_file << "#pragma once\n";
       string upp = output_file_path;
       for (auto& i : upp)
             i = toupper(i);

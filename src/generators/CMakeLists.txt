@@ -3,6 +3,13 @@ add_executable (gpus_info_generator
 	${CMAKE_CURRENT_SOURCE_DIR}/generators/number_of_gpus.hpp
 )
 
+add_custom_command (
+	OUTPUT
+       ${CMAKE_CURRENT_BINARY_DIR}/generated/gpus_info.hpp
+	# TARGET graphics_generator
+	PRE_BUILD
+	COMMAND $<TARGET_FILE:gpus_info_generator> ${CMAKE_CURRENT_BINARY_DIR}/generated/gpus_info.hpp)
+
 target_link_libraries(gpus_info_generator
 	PUBLIC 
 	/Users/pw/vulkansdk/MoltenVK/dylib/macOS/libMoltenVK.dylib 
@@ -17,6 +24,8 @@ target_include_directories(gpus_info_generator PUBLIC
 	glfw
 	/usr/local/Cellar/boost/1.75.0_1/include
 )
+
+
 
 # add_custom_command (
 # 	OUTPUT gpus_info.hpp 
@@ -36,16 +45,23 @@ add_executable (graphics_generator
 	# ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp
 )
 
-target_compile_definitions (graphics_generator PUBLIC GENERATED_INCLUDE_FILE="${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp")
-
-
-
 add_custom_command (
-	TARGET graphics_generator
+	OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp
+	# TARGET phulkan_library
 	PRE_BUILD
-	COMMAND $<TARGET_FILE:gpus_info_generator> ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
+	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp)
 
-target_sources(graphics_generator PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
+
+target_compile_definitions (graphics_generator PRIVATE GENERATED_INCLUDE_FILE="${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp")
+
+
+
+# add_custom_command (
+# 	TARGET graphics_generator
+# 	PRE_BUILD
+# 	COMMAND $<TARGET_FILE:gpus_info_generator> ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
+
+target_sources(graphics_generator PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/generated/gpus_info.hpp)
 
 # message("$<TARGET_FILE_DIR:graphics_generator>")
 

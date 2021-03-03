@@ -1,35 +1,43 @@
+
+
+
+
+
 # Optionally glob, but only for CMake 3.12 or later:
 # file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${ModernCMakeExample_SOURCE_DIR}/include/modern/*.hpp")
-file(GLOB HEADER_LIST "${phulkan_SOURCE_DIR}/include/phulkan/*.hpp")
-file(GLOB SOURCE_LIST ./*.cpp)
+file(GLOB_RECURSE HEADER_LIST "${phulkan_SOURCE_DIR}/include/phulkan/*.hpp")
+file(GLOB SOURCE_LIST ${phulkan_SOURCE_DIR}/src/*.cpp)
 
 
 # add_executable (graphics_generator ../generators/graphics.cpp)
-# add_custom_command (
-# 	OUTPUT graphics_info.hpp 
-# 	COMMAND graphics_generator)
+
 
 include (generators/CMakeLists.txt)
-
+# add_custom_command (
+# 	OUTPUT graphics_info.hpp 
+# 	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
 
 
 # Make an automatic library - will be static or dynamic based on user setting
 add_library (phulkan_library 
-${SOURCE_LIST} ${HEADER_LIST} 
+${SOURCE_LIST}  ${HEADER_LIST} 
 # ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp
 )
+# target_sources(graphics_generator PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
 
-add_custom_command (
-	TARGET phulkan_library
-	PRE_BUILD
-	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
+# add_custom_command (
+# 	OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp
+# 	# TARGET phulkan_library
+# 	PRE_BUILD
+# 	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp)
 
-target_sources(phulkan_library PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
+target_sources(phulkan_library PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp)
 
 target_compile_definitions (phulkan_library PUBLIC kuk=3)
 
 # We need this directory, and users of our library will need it too
-target_include_directories (phulkan_library PUBLIC ../include ${CMAKE_CURRENT_BINARY_DIR})
+# target_include_directories (phulkan_library PUBLIC ../include ${CMAKE_CURRENT_BINARY_DIR})
+target_include_directories (phulkan_library PUBLIC ${phulkan_SOURCE_DIR}/include)
 
 target_link_libraries (phulkan_library
 	PUBLIC 
@@ -49,20 +57,20 @@ target_include_directories (phulkan_library
 target_compile_features (phulkan_library PUBLIC cxx_std_20)
 
 # IDEs should put the headers in a nice place
-source_group (
-	TREE "${PROJECT_SOURCE_DIR}/include"
-	PREFIX "Header Files"
-	FILES ${HEADER_LIST})
+# source_group (
+# 	TREE "${PROJECT_SOURCE_DIR}/include"
+# 	PREFIX "Header Files"
+# 	FILES ${HEADER_LIST})
 
 	
-# message ($<TARGET_FILE:phulkan_library>)
+# # message ($<TARGET_FILE:phulkan_library>)
 
 
-write_compiler_detection_header (
-	FILE	phulkan_compiler_detection.hpp
-	PREFIX phulkan 
-	COMPILERS GNU Clang MSVC Intel 
-	FEATURES cxx_override 
-			cxx_final 
-)
+# write_compiler_detection_header (
+# 	FILE	phulkan_compiler_detection.hpp
+# 	PREFIX phulkan 
+# 	COMPILERS GNU Clang MSVC Intel 
+# 	FEATURES cxx_override 
+# 			cxx_final 
+# )
 
