@@ -1,13 +1,30 @@
 
 
 FetchContent_Declare(phulkan_generator
-GIT_REPOSITORY https://github.com/phiwen96/phulkan_generator.git
-GIT_TAG main
+	GIT_REPOSITORY https://github.com/phiwen96/phulkan_generator.git
+	GIT_TAG main
 )
-FetchContent_GetProperties(phulkan_generator) 
+
+FetchContent_GetProperties (phulkan_generator) 
+
 if(NOT phulkan_generator_POPULATED)
-	FetchContent_Populate(phulkan_generator)
-	add_subdirectory(${phulkan_generator_SOURCE_DIR} ${phulkan_generator_BINARY_DIR}) 
+	FetchContent_Populate (phulkan_generator)
+	add_subdirectory (${phulkan_generator_SOURCE_DIR} ${phulkan_generator_BINARY_DIR}) 
+endif()
+
+
+
+
+FetchContent_Declare(const_str
+	GIT_REPOSITORY https://github.com/phiwen96/const_str.git
+	GIT_TAG main
+)
+
+FetchContent_GetProperties (const_str) 
+
+if(NOT const_str_POPULATED)
+	FetchContent_Populate (const_str)
+	add_subdirectory (${const_str_SOURCE_DIR} ${const_str_BINARY_DIR}) 
 endif()
 
 
@@ -23,22 +40,26 @@ file(GLOB SOURCE_LIST ${phulkan_SOURCE_DIR}/src/*.cpp)
 
 # Make an automatic library - will be static or dynamic based on user setting
 add_library (phulkan
-${SOURCE_LIST}  ${HEADER_LIST} 
+	${SOURCE_LIST}  ${HEADER_LIST} 
 )
 
-target_sources(phulkan PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+# target_sources(phulkan PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
 target_compile_definitions (phulkan PUBLIC kuk=3)
 
 target_include_directories (phulkan PUBLIC ${phulkan_SOURCE_DIR}/include)
 
 target_link_libraries (phulkan
-	PUBLIC 
+PUBLIC 
+	const_str
+	phulkan_generator 
 	${Vulkan_LIBRARIES}
  	 glfw)
 
 target_include_directories (phulkan
-	PUBLIC
+PUBLIC 
+	const_str
+	phulkan_generator
 	${Vulkan_INCLUDE_DIR}
 	glfw
   	glm)

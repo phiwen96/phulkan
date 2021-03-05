@@ -1,15 +1,17 @@
 add_executable(app app.cpp)
 target_compile_features(app PRIVATE cxx_std_20)
-target_link_libraries(app PRIVATE phulkan)
+
 
 target_link_libraries(app
 PRIVATE 
+phulkan
 ${Vulkan_LIBRARIES}
   glfw
 )
 
 target_include_directories(app
 PRIVATE
+phulkan
 ${Vulkan_INCLUDE_DIR}
   glfw
   glm)
