@@ -1,5 +1,14 @@
 
 
+FetchContent_Declare(phulkan_generator
+GIT_REPOSITORY https://github.com/phiwen96/phulkan_generator.git
+GIT_TAG main
+)
+FetchContent_GetProperties(phulkan_generator) 
+if(NOT phulkan_generator_POPULATED)
+	FetchContent_Populate(phulkan_generator)
+	add_subdirectory(${phulkan_generator_SOURCE_DIR} ${phulkan_generator_BINARY_DIR}) 
+endif()
 
 
 
@@ -15,22 +24,12 @@ file(GLOB SOURCE_LIST ${phulkan_SOURCE_DIR}/src/*.cpp)
 # Make an automatic library - will be static or dynamic based on user setting
 add_library (phulkan
 ${SOURCE_LIST}  ${HEADER_LIST} 
-# ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp
 )
-# target_sources(graphics_generator PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/gpus_info.hpp)
-
-# add_custom_command (
-# 	OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp
-# 	# TARGET phulkan_library
-# 	PRE_BUILD
-# 	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp)
 
 target_sources(phulkan PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
 target_compile_definitions (phulkan PUBLIC kuk=3)
 
-# We need this directory, and users of our library will need it too
-# target_include_directories (phulkan_library PUBLIC ../include ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories (phulkan PUBLIC ${phulkan_SOURCE_DIR}/include)
 
 target_link_libraries (phulkan
@@ -50,21 +49,5 @@ target_include_directories (phulkan
 # All users of this library will need at least C++20
 target_compile_features (phulkan PUBLIC cxx_std_20)
 
-# IDEs should put the headers in a nice place
-# source_group (
-# 	TREE "${PROJECT_SOURCE_DIR}/include"
-# 	PREFIX "Header Files"
-# 	FILES ${HEADER_LIST})
 
-	
-# # message ($<TARGET_FILE:phulkan_library>)
-
-
-# write_compiler_detection_header (
-# 	FILE	phulkan_compiler_detection.hpp
-# 	PREFIX phulkan 
-# 	COMPILERS GNU Clang MSVC Intel 
-# 	FEATURES cxx_override 
-# 			cxx_final 
-# )
 
