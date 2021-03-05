@@ -12,14 +12,8 @@ file(GLOB SOURCE_LIST ${phulkan_SOURCE_DIR}/src/*.cpp)
 # add_executable (graphics_generator ../generators/graphics.cpp)
 
 
-include (generators/CMakeLists.txt)
-# add_custom_command (
-# 	OUTPUT graphics_info.hpp 
-# 	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp)
-
-
 # Make an automatic library - will be static or dynamic based on user setting
-add_library (phulkan_library 
+add_library (phulkan
 ${SOURCE_LIST}  ${HEADER_LIST} 
 # ${CMAKE_CURRENT_BINARY_DIR}/graphics_info.hpp
 )
@@ -31,20 +25,20 @@ ${SOURCE_LIST}  ${HEADER_LIST}
 # 	PRE_BUILD
 # 	COMMAND $<TARGET_FILE:graphics_generator> ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp)
 
-target_sources(phulkan_library PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/generated/graphics_info.hpp)
+target_sources(phulkan PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
-target_compile_definitions (phulkan_library PUBLIC kuk=3)
+target_compile_definitions (phulkan PUBLIC kuk=3)
 
 # We need this directory, and users of our library will need it too
 # target_include_directories (phulkan_library PUBLIC ../include ${CMAKE_CURRENT_BINARY_DIR})
-target_include_directories (phulkan_library PUBLIC ${phulkan_SOURCE_DIR}/include)
+target_include_directories (phulkan PUBLIC ${phulkan_SOURCE_DIR}/include)
 
-target_link_libraries (phulkan_library
+target_link_libraries (phulkan
 	PUBLIC 
 	${Vulkan_LIBRARIES}
  	 glfw)
 
-target_include_directories (phulkan_library
+target_include_directories (phulkan
 	PUBLIC
 	${Vulkan_INCLUDE_DIR}
 	glfw
@@ -54,7 +48,7 @@ target_include_directories (phulkan_library
 # target_link_libraries (modern_library PRIVATE Boost::boost)
 
 # All users of this library will need at least C++20
-target_compile_features (phulkan_library PUBLIC cxx_std_20)
+target_compile_features (phulkan PUBLIC cxx_std_20)
 
 # IDEs should put the headers in a nice place
 # source_group (
