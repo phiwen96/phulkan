@@ -3,6 +3,7 @@
 #include <initializer_list>
 #include <tuple>
 #include <array>
+#include <const_str/const_str.hpp>
 namespace {
 namespace gen = phulkan_generator;
 }
@@ -25,34 +26,27 @@ struct instance
 };
 
 
-template <int... N>
-struct instance_layers
-{
-    static constexpr int size = sizeof... (N);
-    array<char[30], size> m_layers;
-    
-    
-    instance_layers (gen::instance::layer<N>... layers)
-    {
-        int i = 0;
-        ((add_layer (layers, i++)), ...);
-    }
-    
-//    template <int I>
-//    instance_layers (gen::instance::layer<I>, int i)
-//    {
+//template <class T>
+//concept instance_layers_concept = requires (T t) {
+////    {t.name} -> is_
+//}
 //
-//    }
+//template <class... T>
+//requires {
+//
+//}
+//struct instance_layers
+//{
+//    static constexpr int size = sizeof... (T);
+//    tuple <T...> m_layers;
+//
+//
+//
     
-    template <int I>
-    void add_layer (gen::instance::layer<I> layer, int i)
-    {
-//        m_layers [i] = layer.name;
-//        std::copy(layer.name, layer.name + 15, m_layers.begin ());
-    }
+
     
     
     
     
     
-};
+//};

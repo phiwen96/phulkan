@@ -31,7 +31,7 @@ int main() {
    
     constexpr instance s = {tuple<gen::instance::extension<0>, gen::instance::extension<1>>{}, tuple<gen::instance::layer<0>>{}};
     
-    instance_layers in = {gen::instance::layer<0>{}, gen::instance::layer<1>{}};
+//    auto i1 = instance_layers <gen::instance::layer<0>, gen::instance::layer<1>> {};
     
     return 0;
 }
