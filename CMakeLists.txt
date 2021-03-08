@@ -13,6 +13,8 @@ project (
 	LANGUAGES CXX
 )	
 
+add_subdirectory (cmake)
+
 add_subdirectory (dependencies/phake)
 
 ph_git ()
