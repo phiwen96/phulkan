@@ -2,6 +2,7 @@ cmake_minimum_required (VERSION 3.19.6)
 
 get_filename_component (self ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
+
 project (
 	${self} 
 	VERSION 1.0
