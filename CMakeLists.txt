@@ -13,11 +13,11 @@ project (
 	LANGUAGES CXX
 )	
 
-add_subdirectory (cmake)
+add_subdirectory (cmake/phake)
 
-add_subdirectory (dependencies/phake)
+# add_subdirectory (dependencies/phake)
 
-ph_git ()
+# ph_git ()
 
 
 # add_subdirectory (dependencies/const_str)
