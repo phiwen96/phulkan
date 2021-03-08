@@ -6,7 +6,12 @@ project (
 	${self} 
 	VERSION 1.0
 	DESCRIPTION "Very nice project"
-	LANGUAGES CXX)	
+	LANGUAGES CXX
+)	
+add_subdirectory (dependencies/phake)
+ph_git ()
+# add_subdirectory (dependencies/const_str)
+add_subdirectory (dependencies/phulkan_generator)
 
 # set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 

@@ -1,31 +1,31 @@
 
 
-FetchContent_Declare(phulkan_generator
-	GIT_REPOSITORY https://github.com/phiwen96/phulkan_generator.git
-	GIT_TAG main
-)
+# FetchContent_Declare(phulkan_generator
+# 	GIT_REPOSITORY https://github.com/phiwen96/phulkan_generator.git
+# 	GIT_TAG main
+# )
 
-FetchContent_GetProperties (phulkan_generator) 
+# FetchContent_GetProperties (phulkan_generator) 
 
-if(NOT phulkan_generator_POPULATED)
-	FetchContent_Populate (phulkan_generator)
-	add_subdirectory (${phulkan_generator_SOURCE_DIR} ${phulkan_generator_BINARY_DIR}) 
-endif()
-
-
+# if(NOT phulkan_generator_POPULATED)
+# 	FetchContent_Populate (phulkan_generator)
+# 	add_subdirectory (${phulkan_generator_SOURCE_DIR} ${phulkan_generator_BINARY_DIR}) 
+# endif()
 
 
-FetchContent_Declare(const_str
-	GIT_REPOSITORY https://github.com/phiwen96/const_str.git
-	GIT_TAG main
-)
 
-FetchContent_GetProperties (const_str) 
 
-if(NOT const_str_POPULATED)
-	FetchContent_Populate (const_str)
-	add_subdirectory (${const_str_SOURCE_DIR} ${const_str_BINARY_DIR}) 
-endif()
+# FetchContent_Declare(const_str
+# 	GIT_REPOSITORY https://github.com/phiwen96/const_str.git
+# 	GIT_TAG main
+# )
+
+# FetchContent_GetProperties (const_str) 
+
+# if(NOT const_str_POPULATED)
+# 	FetchContent_Populate (const_str)
+# 	add_subdirectory (${const_str_SOURCE_DIR} ${const_str_BINARY_DIR}) 
+# endif()
 
 
 

@@ -19,6 +19,7 @@ namespace gen = phulkan_generator;
 
 int main() {
     
+    cout << gen::instance::extensionCount << endl;
     
     constexpr const_str s1 ("hej");
    
