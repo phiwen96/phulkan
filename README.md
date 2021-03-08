@@ -13,4 +13,7 @@ To build docs (requires Doxygen, output in build/docs/html):
 To use an IDE, such as Xcode:
 	cmake -S . -B xbuild -GXcode
 	cmake --open xbuild
+
+git submodule deinit -f toml++
+ git rm toml++  
 	
