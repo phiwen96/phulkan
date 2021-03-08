@@ -1,6 +1,6 @@
 [submodule "dependencies/phulkan_generator"]
 	path = dependencies/phulkan_generator
 	url = https://github.com/phiwen96/phulkan_generator.git
-[submodule "dependencies/phake"]
-	path = dependencies/phake
-	url = https://github.com/phiwen96/phake.git
+[submodule "cmake/cmake_git"]
+	path = cmake/cmake_git
+	url = https://github.com/phiwen96/cmake_git.git
